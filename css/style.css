@@ -116,6 +116,10 @@ img {
   line-height: 0px;
 }
 
+.burger:hover {
+  cursor: pointer;
+}
+
 .logo {
   margin-left: 0px;
   margin-right: 179px;
@@ -152,6 +156,10 @@ img {
   background-size: contain;
 }
 
+.menu__cross:hover {
+  cursor: pointer;
+}
+
 .menu__list {
   margin-top: 30px;
   margin-bottom: 73px;
@@ -163,6 +171,10 @@ img {
   font-size: 24px;
   line-height: 64px;
   color: var(--white-color);
+}
+
+.menu__item-text:hover {
+  cursor: pointer;
 }
 
 .menu__item-text:active {
@@ -182,6 +194,10 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: var(--white-color);
+}
+
+.enter:hover {
+  cursor: pointer;
 }
 
 .enter:active {
@@ -207,6 +223,10 @@ img {
 
 .menu__scrollbar-list-item-info {
   -webkit-tap-highlight-color: transparent;
+}
+
+.menu__scrollbar-list-item-info:hover {
+  cursor: pointer;
 }
 
 .menu__scrollbar-list-item-info-img {
@@ -278,6 +298,10 @@ img {
   line-height: 0px;
 }
 
+.search:hover {
+  cursor: pointer;
+}
+
 .header-form--adaptive {
   position: relative;
   display: none;
@@ -304,6 +328,10 @@ img {
   background-image: url(../img/header/svg/search.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.header-form__button--adaptive:hover {
+  cursor: pointer;
 }
 
 .header-form__input--adaptive {

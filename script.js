@@ -89,8 +89,8 @@
     menuCross.addEventListener('click', function() {
         menu.classList.remove('menu--active');
     })
+
     let menuList = document.querySelectorAll('.menu__item-text');
-    
     document.addEventListener('click', function(e) {
         menuList.forEach(element => {
             if (e.target === element) {
@@ -98,17 +98,6 @@
             }
         });
     })
-
-
-
-    // close all if resize window
-    window.addEventListener('resize', function() {
-        search.classList.remove('search--active');
-        searchForm.classList.remove('header-form--adaptive--active');
-        document.querySelector('.logo').classList.remove('logo--none');
-        document.querySelector('.burger').classList.remove('burger--none');
-        menu.classList.remove('menu--active');
-    });
 
 
 
