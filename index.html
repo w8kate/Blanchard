@@ -12,384 +12,261 @@
   />
   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 
-  <script defer src="focus-visible.js"></script>
+  <script defer src="/js/focus-visible.js"></script>
 
-  <script defer src="script.js"></script>
+  <script defer src="/js/script.js"></script>
 
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <div class="header">
-    <div class="container header-container">
-      <div class="burger"></div>
-      <img class="logo" src="/img/logo.png" alt="Blanchard. Художественная галерея">
-      <div class="menu">
-        <div class="menu-left">
-          <div class="menu__cross"></div>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__item-text" href="#about-us">
+  <header class="header">
+    <div class="header-top">
+      <div class="container header-container">
+        <img class="logo" src="/img/logo.png" alt="Blanchard. Художественная галерея">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#about-us">
                 О нас
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__item-text" href="#gallery">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#gallery">
                 Галерея
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__item-text" href="#catalog">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#catalog">
                 Каталог
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__item-text" href="#events">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#events">
                 События
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__item-text" href="#editions">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#editions">
                 Издания
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__item-text" href="#projects">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#projects">
                 Проекты
               </a>
             </li>
-            <li class="menu__item">
-              <a class="menu__item-text" href="#contacts">
+            <li class="nav__item">
+              <a class="nav__item-text" href="#contacts">
                 Контакты
               </a>
             </li>
           </ul>
-          <a class="enter" href="#">
-            Войти
-          </a>
-        </div>
-        <div class="menu__scrollbar" data-simplebar>
-          <ul class="menu__scrollbar-list">
-            <li class="menu__scrollbar-list-item">
-              <a class="menu__scrollbar-list-item-info" href="#">
-                <div class="menu__scrollbar-list-item-info-img menu__scrollbar-list-item-info-img-first">
-                  <div class="menu__scrollbar-list-item-info-img-date">
-                    28 марта, 14:15
-                  </div>
-                </div>
-                <div class="menu__scrollbar-list-item-info-text">
-                  Безусловно, реализация намеченных плановых заданий играет важную роль...
-                </div>
-                <div class="menu__scrollbar-list-item-info-text-second">
-                  Безусловно, реализация намеченных плановых...
-                </div>
-              </a>
-            </li>
-            <li class="menu__scrollbar-list-item">
-              <a class="menu__scrollbar-list-item-info" href="#">
-                <div class="menu__scrollbar-list-item-info-img menu__scrollbar-list-item-info-img-second">
-                  <div class="menu__scrollbar-list-item-info-img-date">
-                    28 марта, 13:01
-                  </div>
-                </div>
-                <div class="menu__scrollbar-list-item-info-text">
-                  Имеется спорная точка зрения, гласящая примерно следующее: предприниматели...
-                </div>
-                <div class="menu__scrollbar-list-item-info-text-second">
-                  Имеется спорная точка зрения, гласящая...
-                </div>
-              </a>
-            </li>
-            <li class="menu__scrollbar-list-item">
-              <a class="menu__scrollbar-list-item-info" href="#">
-                <div class="menu__scrollbar-list-item-info-img menu__scrollbar-list-item-info-img-third">
-                  <div class="menu__scrollbar-list-item-info-img-date">
-                    28 марта, 12:44
-                  </div>
-                </div>
-                <div class="menu__scrollbar-list-item-info-text">
-                  Для современного мира понимание сути ресурсосберегающих технологий говорит...
-                </div>
-                <div class="menu__scrollbar-list-item-info-text-second">
-                  Для современного мира понимание сути...
-                </div>
-              </a>
-            </li>
-            <li class="menu__scrollbar-list-item">
-              <a class="menu__scrollbar-list-item-info" href="#">
-                <div class="menu__scrollbar-list-item-info-img menu__scrollbar-list-item-info-img-first">
-                  <div class="menu__scrollbar-list-item-info-img-date">
-                    28 марта, 14:15
-                  </div>
-                </div>
-                <div class="menu__scrollbar-list-item-info-text">
-                  Безусловно, реализация намеченных плановых заданий играет важную роль...
-                </div>
-                <div class="menu__scrollbar-list-item-info-text-second">
-                  Безусловно, реализация намеченных плановых...
-                </div>
-              </a>
-            </li>
-            <li class="menu__scrollbar-list-item">
-              <a class="menu__scrollbar-list-item-info" href="#">
-                <div class="menu__scrollbar-list-item-info-img menu__scrollbar-list-item-info-img-second">
-                  <div class="menu__scrollbar-list-item-info-img-date">
-                    28 марта, 13:01
-                  </div>
-                </div>
-                <div class="menu__scrollbar-list-item-info-text">
-                  Имеется спорная точка зрения, гласящая примерно следующее: предприниматели...
-                </div>
-                <div class="menu__scrollbar-list-item-info-text-second">
-                  Имеется спорная точка зрения, гласящая...
-                </div>
-              </a>
-            </li>
-            <li class="menu__scrollbar-list-item">
-              <a class="menu__scrollbar-list-item-info" href="#">
-                <div class="menu__scrollbar-list-item-info-img menu__scrollbar-list-item-info-img-third">
-                  <div class="menu__scrollbar-list-item-info-img-date">
-                    28 марта, 12:44
-                  </div>
-                </div>
-                <div class="menu__scrollbar-list-item-info-text">
-                  Для современного мира понимание сути ресурсосберегающих технологий говорит...
-                </div>
-                <div class="menu__scrollbar-list-item-info-text-second">
-                  Для современного мира понимание сути...
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
+        </nav>
+        <a class="header-btn" href="#">
+          <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="header-btn-img" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+          </svg>
+          Войти
+        </a>
       </div>
-      <button class="search"></button>
-      <form class="header-form--adaptive">
-        <div class="header-form-container">
-          <button class="header-form__button--adaptive" type="submit"></button>
-          <input class="header-form__input--adaptive" type="text" value="">
-        </div>
-        <button class="header-form__cross--adaptive"></button>
-      </form>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__item-text" href="#about-us">
-              О нас
-            </a>
+    </div>
+    <div class="header-bottom">
+      <div class="container header-container">
+        <ul class="header-list">
+          <li class="header-list__item">
+            <button class="header-list__item-btn" data-button-path="first">
+              Реализм
+              <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-list__item-btn-img" d="M11 1L6 6L0.999998 1" stroke="white"/>
+              </svg>
+            </button>
+              <div class="header-list__item-scrollbar">
+                <ul class="scrollbar__list" data-simplebar>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--one">
+                    <a class="scrollbar__list-item-elem" href="#">Тинторетто</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--two">
+                    <a class="scrollbar__list-item-elem" href="#">Фридрих</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--three">
+                    <a class="scrollbar__list-item-elem" href="#">Леонардо</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--four">
+                    <a class="scrollbar__list-item-elem" href="#">Вероккьо</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--one">
+                    <a class="scrollbar__list-item-elem" href="#">Тинторетто</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--two">
+                    <a class="scrollbar__list-item-elem" href="#">Фридрих</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--three">
+                    <a class="scrollbar__list-item-elem" href="#">Леонардо</a>
+                  </li>
+                  <li class="scrollbar__list-item scrollbar__list-item--first--four">
+                    <a class="scrollbar__list-item-elem" href="#">Вероккьо</a>
+                  </li>
+                </ul>
+              </div>
           </li>
-          <li class="nav__item">
-            <a class="nav__item-text" href="#gallery">
-              Галерея
-            </a>
+          <li class="header-list__item">
+            <button class="header-list__item-btn" data-button-path="second">
+              Импрессионизм
+              <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-list__item-btn-img" d="M11 1L6 6L0.999998 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header-list__item-scrollbar">
+              <ul class="scrollbar__list" data-simplebar>
+                <li class="scrollbar__list-item scrollbar__list-item--second--one">
+                  <a class="scrollbar__list-item-elem" href="#">Моне</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--two">
+                  <a class="scrollbar__list-item-elem" href="#">Сислей</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--three">
+                  <a class="scrollbar__list-item-elem" href="#">Мане</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--four">
+                  <a class="scrollbar__list-item-elem" href="#">Ренуар</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--one">
+                  <a class="scrollbar__list-item-elem" href="#">Моне</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--two">
+                  <a class="scrollbar__list-item-elem" href="#">Сислей</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--three">
+                  <a class="scrollbar__list-item-elem" href="#">Мане</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--second--four">
+                  <a class="scrollbar__list-item-elem" href="#">Ренуар</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="nav__item">
-            <a class="nav__item-text" href="#catalog">
-              Каталог
-            </a>
-          </li> 
-          <li class="nav__item">
-            <a class="nav__item-text" href="#events">
-              События
-            </a>
+          <li class="header-list__item">
+            <button class="header-list__item-btn" data-button-path="third">
+              Постимпрессионизм
+              <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-list__item-btn-img" d="M11 1L6 6L0.999998 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header-list__item-scrollbar">
+              <ul class="scrollbar__list" data-simplebar>
+                <li class="scrollbar__list-item scrollbar__list-item--third--one">
+                  <a class="scrollbar__list-item-elem" href="#">Ван Гог</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--two">
+                  <a class="scrollbar__list-item-elem" href="#">Сезанн</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--three">
+                  <a class="scrollbar__list-item-elem" href="#">Гоген</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--four">
+                  <a class="scrollbar__list-item-elem" href="#">Сёра</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--one">
+                  <a class="scrollbar__list-item-elem" href="#">Ван Гог</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--two">
+                  <a class="scrollbar__list-item-elem" href="#">Сезанн</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--three">
+                  <a class="scrollbar__list-item-elem" href="#">Гоген</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--third--four">
+                  <a class="scrollbar__list-item-elem" href="#">Сёра</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="nav__item">
-            <a class="nav__item-text" href="#editions">
-              Издания
-            </a>
+          <li class="header-list__item">
+            <button class="header-list__item-btn" data-button-path="fourth">
+              Авангард
+              <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-list__item-btn-img" d="M11 1L6 6L0.999998 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header-list__item-scrollbar">
+              <ul class="scrollbar__list" data-simplebar>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--one">
+                  <a class="scrollbar__list-item-elem" href="#">Кандинский</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--two">
+                  <a class="scrollbar__list-item-elem" href="#">Маринетти</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--three">
+                  <a class="scrollbar__list-item-elem" href="#">Малевич</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--four">
+                  <a class="scrollbar__list-item-elem" href="#">Пикассо</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--one">
+                  <a class="scrollbar__list-item-elem" href="#">Кандинский</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--two">
+                  <a class="scrollbar__list-item-elem" href="#">Маринетти</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--three">
+                  <a class="scrollbar__list-item-elem" href="#">Малевич</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fourth--four">
+                  <a class="scrollbar__list-item-elem" href="#">Пикассо</a>
+                </li>
+              </ul>
+            </div>
           </li>
-          <li class="nav__item">
-            <a class="nav__item-text" href="#projects">
-              Проекты
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__item-text" href="#contacts">
-              Контакты
-            </a>
+          <li class="header-list__item">
+            <button class="header-list__item-btn" data-button-path="fifth">
+              Футуризм
+              <svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="header-list__item-btn-img" d="M11 1L6 6L0.999998 1" stroke="white"/>
+              </svg>
+            </button>
+            <div class="header-list__item-scrollbar">
+              <ul class="scrollbar__list" data-simplebar>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--one">
+                  <a class="scrollbar__list-item-elem" href="#">Карра</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--two">
+                  <a class="scrollbar__list-item-elem" href="#">Прателла</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--three">
+                  <a class="scrollbar__list-item-elem" href="#">Северини</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--four">
+                  <a class="scrollbar__list-item-elem" href="#">Балла</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--one">
+                  <a class="scrollbar__list-item-elem" href="#">Карра</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--two">
+                  <a class="scrollbar__list-item-elem" href="#">Прателла</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--three">
+                  <a class="scrollbar__list-item-elem" href="#">Северини</a>
+                </li>
+                <li class="scrollbar__list-item scrollbar__list-item--fifth--four">
+                  <a class="scrollbar__list-item-elem" href="#">Балла</a>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
-      </nav>
-      <a class="header-btn" href="#">
-        Войти
-      </a>
+        <form class="header-form">
+          <input class="header-form__input" type="text" placeholder="Поиск по сайту" value="">
+          <button class="header-form__button" type="submit" aria-label="Поиск по сайту">
+            <svg width="21" height="21" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="header-form__button-img" width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
+              <path class="header-form__button-img" fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="header--bottom">
-    <div class="container header-container">
-      <ul class="header-list">
-        <li class="header-list__item">
-          <button class="header-list__item-btn" data-button-path="first">
-            Реализм
-          </button>
-          <div class="header-list__item-scrollbar" data-simplebar>
-            <ul class="scrollbar__list">
-              <li class="scrollbar__list-item scrollbar__list-item--first--one">
-                <a class="scrollbar__list-item-elem" href="#">Тинторетто</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--two">
-                <a class="scrollbar__list-item-elem" href="#">Фридрих</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--three">
-                <a class="scrollbar__list-item-elem" href="#">Леонардо</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--four">
-                <a class="scrollbar__list-item-elem" href="#">Вероккьо</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--one">
-                <a class="scrollbar__list-item-elem" href="#">Тинторетто</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--two">
-                <a class="scrollbar__list-item-elem" href="#">Фридрих</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--three">
-                <a class="scrollbar__list-item-elem" href="#">Леонардо</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--first--four">
-                <a class="scrollbar__list-item-elem" href="#">Вероккьо</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="header-list__item">
-          <button class="header-list__item-btn" data-button-path="second">
-            Импрессионизм
-          </button>
-          <div class="header-list__item-scrollbar" data-simplebar>
-            <ul class="scrollbar__list">
-              <li class="scrollbar__list-item scrollbar__list-item--second--one">
-                <a class="scrollbar__list-item-elem" href="#">Моне</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--two">
-                <a class="scrollbar__list-item-elem" href="#">Сислей</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--three">
-                <a class="scrollbar__list-item-elem" href="#">Мане</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--four">
-                <a class="scrollbar__list-item-elem" href="#">Ренуар</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--one">
-                <a class="scrollbar__list-item-elem" href="#">Моне</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--two">
-                <a class="scrollbar__list-item-elem" href="#">Сислей</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--three">
-                <a class="scrollbar__list-item-elem" href="#">Мане</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--second--four">
-                <a class="scrollbar__list-item-elem" href="#">Ренуар</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="header-list__item">
-          <button class="header-list__item-btn" data-button-path="third">
-            Постимпрессионизм
-          </button>
-          <div class="header-list__item-scrollbar" data-simplebar>
-            <ul class="scrollbar__list">
-              <li class="scrollbar__list-item scrollbar__list-item--third--one">
-                <a class="scrollbar__list-item-elem" href="#">Ван Гог</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--two">
-                <a class="scrollbar__list-item-elem" href="#">Сезанн</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--three">
-                <a class="scrollbar__list-item-elem" href="#">Гоген</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--four">
-                <a class="scrollbar__list-item-elem" href="#">Сёра</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--one">
-                <a class="scrollbar__list-item-elem" href="#">Ван Гог</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--two">
-                <a class="scrollbar__list-item-elem" href="#">Сезанн</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--three">
-                <a class="scrollbar__list-item-elem" href="#">Гоген</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--third--four">
-                <a class="scrollbar__list-item-elem" href="#">Сёра</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="header-list__item">
-          <button class="header-list__item-btn" data-button-path="fourth">
-            Авангард
-          </button>
-          <div class="header-list__item-scrollbar" data-simplebar>
-            <ul class="scrollbar__list">
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--one">
-                <a class="scrollbar__list-item-elem" href="#">Кандинский</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--two">
-                <a class="scrollbar__list-item-elem" href="#">Маринетти</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--three">
-                <a class="scrollbar__list-item-elem" href="#">Малевич</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--four">
-                <a class="scrollbar__list-item-elem" href="#">Пикассо</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--one">
-                <a class="scrollbar__list-item-elem" href="#">Кандинский</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--two">
-                <a class="scrollbar__list-item-elem" href="#">Маринетти</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--three">
-                <a class="scrollbar__list-item-elem" href="#">Малевич</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fourth--four">
-                <a class="scrollbar__list-item-elem" href="#">Пикассо</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="header-list__item">
-          <button class="header-list__item-btn" data-button-path="fifth">
-            Футуризм
-          </button>
-          <div class="header-list__item-scrollbar" data-simplebar>
-            <ul class="scrollbar__list">
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--one">
-                <a class="scrollbar__list-item-elem" href="#">Карра</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--two">
-                <a class="scrollbar__list-item-elem" href="#">Прателла</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--three">
-                <a class="scrollbar__list-item-elem" href="#">Северини</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--four">
-                <a class="scrollbar__list-item-elem" href="#">Балла</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--one">
-                <a class="scrollbar__list-item-elem" href="#">Карра</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--two">
-                <a class="scrollbar__list-item-elem" href="#">Прателла</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--three">
-                <a class="scrollbar__list-item-elem" href="#">Северини</a>
-              </li>
-              <li class="scrollbar__list-item scrollbar__list-item--fifth--four">
-                <a class="scrollbar__list-item-elem" href="#">Балла</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      <form class="header-form" tabindex="0">
-        <input class="header-form__input" type="text" placeholder="Поиск по сайту" value="">
-        <button class="header-form__button" type="submit" aria-label="Поиск по сайту"></button>
-      </form>
-    </div>
-  </div>
+  </header>
 
   <!-- About us -->
   <div class="container section-container">
