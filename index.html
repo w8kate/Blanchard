@@ -12,67 +12,84 @@
   />
   <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
 
-  <script defer src="/js/focus-visible.js"></script>
+  <script defer src="./js/focus-visible.js"></script>
 
-  <script defer src="/js/script.js"></script>
+  <script defer src="./js/script.js"></script>
 
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <header class="header">
     <div class="header-top">
       <div class="container header-container">
-        <img class="logo" src="/img/logo.png" alt="Blanchard. Художественная галерея">
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__item-text" href="#about-us">
-                О нас
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-text" href="#gallery">
-                Галерея
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-text" href="#catalog">
-                Каталог
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-text" href="#events">
-                События
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-text" href="#editions">
-                Издания
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-text" href="#projects">
-                Проекты
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__item-text" href="#contacts">
-                Контакты
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <a class="header-btn" href="#">
-          <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="header-btn-img" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+        <button class="burger">
+          <svg class="burger-img" width="36" height="29" viewbox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="burger-img-elem" width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" fill="white"/>
+            <path class="burger-img-elem" d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white"/>
+            <path class="burger-img-elem" d="M24 25.0478H0V28.7H24V25.0478Z" fill="white"/>
           </svg>
-          Войти
-        </a>
+        </button>
+        <img class="logo" src="./img/logo.png" alt="Blanchard. Художественная галерея">
+        <div class="nav-and-enter">
+          <button class="nav-and-enter__cross" type="button">
+            <svg class="nav-and-enter__cross-img" width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="nav-and-enter__cross-img-elem" opacity="0.7">
+                <rect class="nav-and-enter__cross-img-elem-info" width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 7.62939e-06)" fill="white"/>
+                <rect class="nav-and-enter__cross-img-elem-info" width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+              </g>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__item-text" href="#about-us">
+                  О нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-text" href="#gallery">
+                  Галерея
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-text" href="#catalog">
+                  Каталог
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-text" href="#events">
+                  События
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-text" href="#editions">
+                  Издания
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-text" href="#projects">
+                  Проекты
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__item-text" href="#contacts">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header-btn" href="#">
+            <svg class="header-btn-img" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="header-btn-img-elem" d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+            </svg>
+            Войти
+          </a>
+        </div>
       </div>
     </div>
     <div class="header-bottom">
-      <div class="container header-container">
+      <div class="container header-container header-container-adaptive">
         <ul class="header-list">
           <li class="header-list__item">
             <button class="header-list__item-btn" data-button-path="first">
@@ -84,28 +101,28 @@
               <div class="header-list__item-scrollbar">
                 <ul class="scrollbar__list" data-simplebar>
                   <li class="scrollbar__list-item scrollbar__list-item--first--one">
-                    <a class="scrollbar__list-item-elem" href="#">Тинторетто</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Тинторетто</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--two">
-                    <a class="scrollbar__list-item-elem" href="#">Фридрих</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Фридрих</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--three">
-                    <a class="scrollbar__list-item-elem" href="#">Леонардо</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Леонардо</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--four">
-                    <a class="scrollbar__list-item-elem" href="#">Вероккьо</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Вероккьо</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--one">
-                    <a class="scrollbar__list-item-elem" href="#">Тинторетто</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Тинторетто</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--two">
-                    <a class="scrollbar__list-item-elem" href="#">Фридрих</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Фридрих</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--three">
-                    <a class="scrollbar__list-item-elem" href="#">Леонардо</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Леонардо</a>
                   </li>
                   <li class="scrollbar__list-item scrollbar__list-item--first--four">
-                    <a class="scrollbar__list-item-elem" href="#">Вероккьо</a>
+                    <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Вероккьо</a>
                   </li>
                 </ul>
               </div>
@@ -120,28 +137,28 @@
             <div class="header-list__item-scrollbar">
               <ul class="scrollbar__list" data-simplebar>
                 <li class="scrollbar__list-item scrollbar__list-item--second--one">
-                  <a class="scrollbar__list-item-elem" href="#">Моне</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Моне</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--two">
-                  <a class="scrollbar__list-item-elem" href="#">Сислей</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сислей</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--three">
-                  <a class="scrollbar__list-item-elem" href="#">Мане</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Мане</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--four">
-                  <a class="scrollbar__list-item-elem" href="#">Ренуар</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Ренуар</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--one">
-                  <a class="scrollbar__list-item-elem" href="#">Моне</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Моне</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--two">
-                  <a class="scrollbar__list-item-elem" href="#">Сислей</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сислей</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--three">
-                  <a class="scrollbar__list-item-elem" href="#">Мане</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Мане</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--second--four">
-                  <a class="scrollbar__list-item-elem" href="#">Ренуар</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Ренуар</a>
                 </li>
               </ul>
             </div>
@@ -156,28 +173,28 @@
             <div class="header-list__item-scrollbar">
               <ul class="scrollbar__list" data-simplebar>
                 <li class="scrollbar__list-item scrollbar__list-item--third--one">
-                  <a class="scrollbar__list-item-elem" href="#">Ван Гог</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Ван Гог</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--two">
-                  <a class="scrollbar__list-item-elem" href="#">Сезанн</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сезанн</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--three">
-                  <a class="scrollbar__list-item-elem" href="#">Гоген</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Гоген</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--four">
-                  <a class="scrollbar__list-item-elem" href="#">Сёра</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сёра</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--one">
-                  <a class="scrollbar__list-item-elem" href="#">Ван Гог</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Ван Гог</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--two">
-                  <a class="scrollbar__list-item-elem" href="#">Сезанн</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сезанн</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--three">
-                  <a class="scrollbar__list-item-elem" href="#">Гоген</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Гоген</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--third--four">
-                  <a class="scrollbar__list-item-elem" href="#">Сёра</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сёра</a>
                 </li>
               </ul>
             </div>
@@ -192,28 +209,28 @@
             <div class="header-list__item-scrollbar">
               <ul class="scrollbar__list" data-simplebar>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--one">
-                  <a class="scrollbar__list-item-elem" href="#">Кандинский</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Кандинский</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--two">
-                  <a class="scrollbar__list-item-elem" href="#">Маринетти</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Маринетти</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--three">
-                  <a class="scrollbar__list-item-elem" href="#">Малевич</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Малевич</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--four">
-                  <a class="scrollbar__list-item-elem" href="#">Пикассо</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Пикассо</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--one">
-                  <a class="scrollbar__list-item-elem" href="#">Кандинский</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Кандинский</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--two">
-                  <a class="scrollbar__list-item-elem" href="#">Маринетти</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Маринетти</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--three">
-                  <a class="scrollbar__list-item-elem" href="#">Малевич</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Малевич</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fourth--four">
-                  <a class="scrollbar__list-item-elem" href="#">Пикассо</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Пикассо</a>
                 </li>
               </ul>
             </div>
@@ -228,39 +245,47 @@
             <div class="header-list__item-scrollbar">
               <ul class="scrollbar__list" data-simplebar>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--one">
-                  <a class="scrollbar__list-item-elem" href="#">Карра</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Карра</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--two">
-                  <a class="scrollbar__list-item-elem" href="#">Прателла</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Прателла</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--three">
-                  <a class="scrollbar__list-item-elem" href="#">Северини</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Северини</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--four">
-                  <a class="scrollbar__list-item-elem" href="#">Балла</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Балла</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--one">
-                  <a class="scrollbar__list-item-elem" href="#">Карра</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Карра</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--two">
-                  <a class="scrollbar__list-item-elem" href="#">Прателла</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Прателла</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--three">
-                  <a class="scrollbar__list-item-elem" href="#">Северини</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Северини</a>
                 </li>
                 <li class="scrollbar__list-item scrollbar__list-item--fifth--four">
-                  <a class="scrollbar__list-item-elem" href="#">Балла</a>
+                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Балла</a>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
-        <form class="header-form">
+        <form class="header-form" tabindex="0">
+          <button class="header-form__cross" type="button">
+            <svg class="header-form__cross-img" width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g class="header-form__cross-img-elem" opacity="0.7">
+                <rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 7.62939e-06)" fill="white"/>
+                <rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+              </g>
+            </svg>
+          </button>
           <input class="header-form__input" type="text" placeholder="Поиск по сайту" value="">
           <button class="header-form__button" type="submit" aria-label="Поиск по сайту">
-            <svg width="21" height="21" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect class="header-form__button-img" width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
-              <path class="header-form__button-img" fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
+            <svg class="header-form__button-img" width="21" height="21" viewbox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect class="header-form__button-img-elem" width="9.15446" height="2.28862" transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)" fill="white"/>
+              <path class="header-form__button-img-elem" fill-rule="evenodd" clip-rule="evenodd" d="M16.1246 24.174C10.0376 24.174 5.32763 19.2725 5.32763 13.5104C5.32763 7.74821 10.0376 2.84674 16.1246 2.84674C22.2115 2.84674 26.9215 7.74821 26.9215 13.5104C26.9215 19.2725 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14867 8.76285 0.180832 16.1246 0.180832C23.4863 0.180832 29.4541 6.14867 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z" fill="white"/>
             </svg>
           </button>
         </form>
