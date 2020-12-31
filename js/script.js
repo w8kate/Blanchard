@@ -132,7 +132,7 @@
 
 
   function openBurger() {
-    let burger = document.querySelector('.burger-img');
+    let burger = document.querySelector('.burger');
     let menu = document.querySelector('.nav-and-enter');
     let cross = document.querySelector('.nav-and-enter__cross');
     let navItems = document.querySelectorAll('.nav__item-text');
@@ -217,5 +217,18 @@
       })
     })
   }
+
+  const subscribe = document.querySelector('.hero__button')
+
+  subscribe.addEventListener('click', function (e) {
+    e.preventDefault()
+
+    const blockID = subscribe.getAttribute('href')
+
+    document.querySelector(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
 
 })();
