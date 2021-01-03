@@ -360,17 +360,16 @@ img {
 }
 
 .header-list__item-scrollbar {
+  display: none;
   position: absolute;
   padding: 40px;
   width: 300px;
   max-height: 300px;
   background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
 }
 
 .header-list__item-scrollbar--active {
-  opacity: 1;
+  display: block;
 }
 
 .scrollbar__list {
@@ -913,15 +912,14 @@ img {
 }
 
 .hero__desc {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
   margin-bottom: 93px;
+  max-width: 579px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: var(--white-color);
-}
-
-.hero__desc--desk--320 {
-  display: none;
 }
 
 .hero__button {
@@ -972,6 +970,7 @@ img {
 
   .hero__desc {
     margin-bottom: 133px;
+    max-width: 661px;
   }
 
   .hero__button {
@@ -1003,18 +1002,13 @@ img {
 
   .hero__desc {
     margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 265px;
     text-align: center;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-  }
-
-  .hero__desc--desk {
-    display: none;
-  }
-
-  .hero__desc--desk--320 {
-    display: inherit;
   }
 
   .hero__button {
