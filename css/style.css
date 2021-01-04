@@ -905,6 +905,7 @@ img {
   margin-bottom: 21px;
   margin-left: -6px;
   padding-top: 142px;
+  max-width: 597px;
   font-weight: 700;
   font-size: 72px;
   line-height: 83px;
@@ -993,8 +994,10 @@ img {
 
   .hero__title {
     margin-bottom: 16px;
-    margin-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 38px;
+    max-width: 258px;
     text-align: center;
     font-size: 32px;
     line-height: 38px;
