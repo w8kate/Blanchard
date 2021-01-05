@@ -14,9 +14,12 @@
 
   <script defer src="./js/focus-visible.js"></script>
 
+  <script defer src="./js/choices.min.js"></script>
+
   <script defer src="./js/script.js"></script>
 
   <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/choices.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -324,9 +327,25 @@
 
   <!-- Gallery -->
   <section class="section-gallery">
-    <div class="container section-container">
-      <div class="section-heading" id="gallery">
-        Галерея
+    <div class="container section-container section-gallery-container">
+      <div class="section-gallery-container--left">
+        <div class="section-heading section-heading--white" id="gallery">
+          Галерея
+        </div>
+        <div class="gallery__select-title">
+          Фильтровать по:
+        </div>
+        <select id="select" name="select">
+          <option value="">Автор</option>
+          <option value="">Направление</option>
+          <option value="">Техника</option>
+        </select>
+        <p class="gallery__note">
+          Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a class="gallery__note-link" href="#">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+        </p>
+      </div>
+      <div class="section-gallery-container--right">
+
       </div>
     </div>
   </section>
