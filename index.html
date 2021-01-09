@@ -16,6 +16,13 @@
 
   <script defer src="./js/choices.min.js"></script>
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script defer src="./js/swiper.js"></script>
+
   <script defer src="./js/script.js"></script>
 
   <link rel="stylesheet" href="./css/normalize.css">
@@ -335,7 +342,7 @@
         <div class="gallery__select-title">
           Фильтровать по:
         </div>
-        <select id="select" name="select">
+        <select id="select" name="select" aria-label="Фильтровать по">
           <option value="">Автор</option>
           <option value="">Направление</option>
           <option value="">Техника</option>
@@ -345,7 +352,49 @@
         </p>
       </div>
       <div class="section-gallery-container--right">
-
+        <div class="swiper-container">
+          <div class="swiper__navigation">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pages">
+              <span class="swiper-pages__actual">1</span>
+              &#47;
+              <span class="swiper-pages__all">5</span>
+            </div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/gallery/jpg/1.1.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/1.4.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/1.2.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/1.5.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/1.3.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/1.6.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/2.1.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/2.4.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/2.2.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/2.5.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/2.3.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/2.6.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/3.1.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/3.4.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/3.2.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/3.5.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/3.3.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/3.6.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/4.1.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/4.4.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/4.2.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/4.5.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/4.3.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/4.6.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/5.1.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/5.4.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/5.2.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/5.5.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/5.3.jpg" alt="picture"></div>
+            <div class="swiper-slide"><img src="./img/gallery/jpg/5.6.jpg" alt="picture"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

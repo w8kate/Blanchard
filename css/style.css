@@ -34,6 +34,7 @@
   --menu-scrollbar: #C4C4C4;
   --hero-button-border: #D1A9F0;
   --gallery-select: #999999;
+  --gallery-swiper-buttons: #666666;
 }
 
 * {
@@ -1059,6 +1060,10 @@ img {
   display: flex;
 }
 
+.section-gallery-container--left {
+  margin-right: 50px;
+}
+
 .gallery__select-title {
   padding-top: 10px;
   margin-bottom: 20px;
@@ -1176,3 +1181,71 @@ div[aria-selected="true"] {
   outline: 2px solid var(--header-focus-color);
 }
 
+.swiper-container {
+  margin-top: 25px;
+  width: 1150px;
+  height: 860px;
+}
+
+.swiper-slide {
+  width: 350px;
+  height: 350px;
+}
+
+.swiper__navigation {
+  margin-bottom: 30px;
+}
+
+.swiper-pages {
+  display: inline-block;
+  margin-left: 52px;
+  color: var(--white-color);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 0;
+  margin-top: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background-color: var(--gallery-swiper-buttons);
+  outline: none;
+}
+
+.swiper-button-next {
+  left: 104px;
+  transition: all 200ms ease;
+}
+
+.swiper-button-prev {
+  left: 4px;
+  transition: all 200ms ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 14px;
+  color: var(--white-color);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: var(--header-scrollbar);
+}
+
+.swiper-button-active {
+  border: 2px solid var(--header-scrollbar-focus);
+  background-color: var(--header-focus-color);
+}
+
+.swiper-button-next:focus-visible,
+.swiper-button-prev:focus-visible {
+  border: 2px solid var(--header-focus-color);
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  background-color: var(--header-scrollbar);
+}

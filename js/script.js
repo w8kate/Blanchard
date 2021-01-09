@@ -238,4 +238,10 @@
       searchEnabled: false, itemSelectText: '', shouldSort: false
     });
 
+  if (document.querySelector('.choises__list').classList.contains('is-active')) {
+    document.querySelectorAll('choises__item').forEach(element => {
+      element.tabIndex = "1";
+    });
+  }
+
 })();
