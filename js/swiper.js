@@ -10,6 +10,36 @@ let swiperGallery = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerColumn: 1,
+      slidesPerGroup : 1,
+      simulateTouch : true,
+    },
+    768: {
+      spaceBetween: 34,
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup : 2,
+      simulateTouch : false,
+    },
+    1024: {
+      spaceBetween: 34,
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup : 2,
+      simulateTouch : false,
+    },
+    1920: {
+      spaceBetween: 50,
+      slidesPerView: 3,
+      slidesPerColumn: 2,
+      slidesPerGroup : 3,
+      simulateTouch : false,
+    },
+  }
 })
 
 
@@ -52,3 +82,13 @@ prevEl.addEventListener('keypress', (e) => {
     actualNumber.textContent = parseInt(actualNumber.textContent) - 1;
   }
 })
+
+
+
+if (screen.width < 1920) {
+  document.querySelector('.swiper-pages__all').textContent = 8;
+}
+
+if (screen.width < 768) {
+  document.querySelector('.swiper-pages__all').textContent = 18;
+}
