@@ -4,7 +4,6 @@ let swiperGallery = new Swiper('.swiper-container', {
   slidesPerView: 3,
   slidesPerColumn: 2,
   slidesPerGroup : 3,
-  simulateTouch : false,
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -13,31 +12,28 @@ let swiperGallery = new Swiper('.swiper-container', {
 
   breakpoints: {
     320: {
+      spaceBetween: 0,
       slidesPerView: 1,
       slidesPerColumn: 1,
       slidesPerGroup : 1,
-      simulateTouch : true,
     },
     768: {
       spaceBetween: 34,
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup : 2,
-      simulateTouch : false,
     },
     1024: {
       spaceBetween: 34,
       slidesPerView: 2,
       slidesPerColumn: 2,
       slidesPerGroup : 2,
-      simulateTouch : false,
     },
     1920: {
       spaceBetween: 50,
       slidesPerView: 3,
       slidesPerColumn: 2,
       slidesPerGroup : 3,
-      simulateTouch : false,
     },
   }
 })
