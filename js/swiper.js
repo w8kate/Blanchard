@@ -35,8 +35,17 @@ let swiperGallery = new Swiper('.swiper-container', {
       slidesPerColumn: 2,
       slidesPerGroup : 3,
     },
+  },
+
+  on: {
+    slideNextTransitionStart: function() {
+      document.querySelector('.swiper-pages__actual').textContent = parseInt(actualNumber.textContent) + 1;
+    },
+    slidePrevTransitionStart: function() {
+      document.querySelector('.swiper-pages__actual').textContent = parseInt(actualNumber.textContent) - 1;
+    },
   }
-})
+});
 
 
 
@@ -47,12 +56,10 @@ let actualNumber = document.querySelector('.swiper-pages__actual');
 
 
 nextEl.addEventListener('click', () => {
-  actualNumber.textContent = parseInt(actualNumber.textContent) + 1;
   nextEl.classList.add('swiper-button-active');
 })
 
 prevEl.addEventListener('click', () => {
-  actualNumber.textContent = parseInt(actualNumber.textContent) - 1;
   prevEl.classList.add('swiper-button-active');
 })
 
