@@ -23,6 +23,7 @@
 
   <script defer src="./js/swiper.js"></script>
 
+  <script defer src="./js/events.js"></script>
   <script defer src="./js/script.js"></script>
 
   <link rel="stylesheet" href="./css/normalize.css">
@@ -323,9 +324,9 @@
   <!-- About us -->
   <section class="section-about">
     <div class="container section-container">
-      <div class="section-heading" id="about-us">
+      <h2 class="section-heading" id="about-us">
         О нас
-      </div>
+      </h2>
       <p class="section-about__text">
         Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
       </p>
@@ -336,9 +337,9 @@
   <section class="section-gallery">
     <div class="container section-container section-gallery-container">
       <div class="gallery-info">
-        <div class="section-heading section-heading--additionally" id="gallery">
+        <h2 class="section-heading section-heading--additionally" id="gallery">
           Галерея
-        </div>
+        </h2>
         <div class="gallery__select-title">
           Фильтровать по:
         </div>
@@ -400,45 +401,78 @@
   <!-- Catalog -->
   <section class="section-catalog">
     <div class="container section-container">
-      <div class="section-heading" id="catalog">
+      <h2 class="section-heading" id="catalog">
         Каталог
-      </div>
+      </h2>
     </div>
   </section>
 
   <!-- Events -->
   <section class="section-events">
     <div class="container section-container">
-      <div class="section-heading" id="events">
+      <h2 class="section-heading" id="events">
         События
-      </div>
+      </h2>
+      <ul class="events__list">
+        <li class="events__item events__item--one">
+          <div class="events__item-place">Музей им. Щусева<br> с 20 марта по 30 апреля</div>
+          <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+          <p class="events__item-desk">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+          <a class="events__item-link" href="#">Подробнее</a>
+        </li>
+        <li class="events__item events__item--two">
+          <div class="events__item-place">ММОМА<br> 24 марта 19:00</div>
+          <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+          <p class="events__item-desk">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</p>
+          <a class="events__item-link" href="#">Подробнее</a>
+        </li>
+        <li class="events__item events__item--three">
+          <div class="events__item-place">Еврейский музей<br> с 31 марта по 21 апреля</div>
+          <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+          <p class="events__item-desk">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы..</p>
+          <a class="events__item-link" href="#">Подробнее</a>
+        </li>
+        <li class="events__item events__item--four events__item--none">
+          <div class="events__item-place">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</div>
+          <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
+          <p class="events__item-desk">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+          <a class="events__item-link" href="#">Подробнее</a>
+        </li>
+        <li class="events__item events__item--five events__item--none">
+          <div class="events__item-place">ММАМ<br> с 8 апреля по 20 мая</div>
+          <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+          <p class="events__item-desk">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+          <a class="events__item-link" href="#">Подробнее</a>
+        </li>
+      </ul>
+      <button class="events__btn">Все события</button>
     </div>
   </section>
 
   <!-- Editions -->
   <section class="section-editions">
     <div class="container section-container">
-      <div class="section-heading" id="editions">
+      <h2 class="section-heading" id="editions">
         Издания
-      </div>
+      </h2>
     </div>
   </section>
 
   <!-- Projects -->
   <section class="section-projects">
     <div class="container section-container">
-      <div class="section-heading" id="projects">
+      <h2 class="section-heading" id="projects">
         Проекты
-      </div>
+      </h2>
     </div>
   </section>
 
   <!-- Contacts -->
   <section class="section-contacts">
     <div class="container section-container">
-      <div class="section-heading" id="contacts">
+      <h2 class="section-heading" id="contacts">
         Контакты
-      </div>
+      </h2>
     </div>
   </section>
 

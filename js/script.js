@@ -184,20 +184,13 @@
     input.classList.remove('header-form__input--active');
     input.setAttribute('placeholder', 'Поиск по сайту');
     input.value = '';
-
     headerBottom.classList.remove('header-bottom--active');
     cross.classList.remove('header-form__cross--active');
-    input.classList.remove('header-form__input--active--768px');
     burger.forEach(element => {
       element.classList.remove('burger-img-elem--none');
     });
     logo.classList.remove('logo--none');
-
-    headerBottom.classList.remove('header-bottom--active--320px');
-    form.classList.remove('header-form--active--320px');
-    cross.classList.remove('header-form__cross--active--320px');
-    input.classList.remove('header-form__input--active--320px');
-    search.classList.remove('header-form__button--active--320px');
+    search.classList.remove('header-form__button--active');
   });
 
 
@@ -239,9 +232,10 @@
     });
 
   if (document.querySelector('.choises__list').classList.contains('is-active')) {
-    document.querySelectorAll('choises__item').forEach(element => {
+    document.querySelectorAll('.choises__item').forEach(element => {
       element.tabIndex = "1";
     });
   }
 
 })();
+
