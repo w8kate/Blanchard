@@ -1,4 +1,4 @@
-let swiperGallery = new Swiper('.swiper-container', {
+let swiperGallery = new Swiper('.swiper-container-gallery', {
   // Optional parameters
   spaceBetween: 50,
   slidesPerView: 3,
