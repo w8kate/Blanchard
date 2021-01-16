@@ -21,10 +21,14 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script defer src="./js/swiper.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-  <script defer src="./js/events.js"></script>
   <script defer src="./js/script.js"></script>
+  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/catalog.js"></script>
+  <script defer src="./js/events.js"></script>
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/choices.min.css">
@@ -349,7 +353,7 @@
           <option value="">Техника</option>
         </select>
       </div>
-      <div class="swiper-container">
+      <div class="swiper-container swiper-container-gallery">
         <div class="swiper__navigation">
           <div class="swiper-button-prev"></div>
           <div class="swiper-pages">
@@ -359,37 +363,37 @@
           </div>
           <div class="swiper-button-next"></div>
         </div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/1.1.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/1.4.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/1.2.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/1.5.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/1.3.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/1.6.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/2.1.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/2.4.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/2.2.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/2.5.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/2.3.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/2.6.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/3.1.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/3.4.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/3.2.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/3.5.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/3.3.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/3.6.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/4.1.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/4.4.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/4.2.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/4.5.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/4.3.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/4.6.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/5.1.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/5.4.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/5.2.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/5.5.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/5.3.jpg" alt="picture"></div>
-          <div class="swiper-slide" tabindex="0"><img class="swiper-slide__img" src="./img/gallery/jpg/5.6.jpg" alt="picture"></div>
+        <div class="swiper-wrapper swiper-wrapper-gallery">
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/1.1.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/1.4.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/1.2.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/1.5.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/1.3.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/1.6.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/2.1.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/2.4.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/2.2.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/2.5.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/2.3.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/2.6.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/3.1.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/3.4.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/3.2.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/3.5.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/3.3.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/3.6.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/4.1.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/4.4.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/4.2.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/4.5.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/4.3.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/4.6.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/5.1.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/5.4.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/5.2.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/5.5.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/5.3.jpg" alt="picture"></div>
+          <div class="swiper-slide swiper-slide-gallery" tabindex="0"><img class="swiper-slide-gallery__img" src="./img/gallery/jpg/5.6.jpg" alt="picture"></div>
         </div>
       </div>
       <p class="gallery__note">
@@ -400,10 +404,495 @@
 
   <!-- Catalog -->
   <section class="section-catalog">
-    <div class="container section-container">
-      <h2 class="section-heading" id="catalog">
-        Каталог
-      </h2>
+    <div class="container section-container section-container-catalog">
+      <div class="catalog-title">
+        <h2 class="section-heading section-heading-catalog" id="catalog">
+          Каталог
+        </h2>
+        <ul class="catalog-tabs">
+          <li class="catalog-tab">
+            <button class="catalog-tab__btn catalog-tab__btn--one" data-path="one" aria-label="Франция"></button>
+          </li>
+          <li class="catalog-tab">
+            <button class="catalog-tab__btn catalog-tab__btn--two" data-path="two" aria-label="Германия"></button>
+          </li>
+          <li class="catalog-tab">
+            <button class="catalog-tab__btn catalog-tab__btn--three catalog-tab__btn--active" data-path="three" aria-label="Италия"></button>
+          </li>
+          <li class="catalog-tab">
+            <button class="catalog-tab__btn catalog-tab__btn--four" data-path="four" aria-label="Россия"></button>
+          </li>
+          <li class="catalog-tab">
+            <button class="catalog-tab__btn catalog-tab__btn--five" data-path="five" aria-label="Бельгия"></button>
+          </li>
+        </ul>
+      </div>
+      <ul class="catalog-tabs__desk-list">
+        <li class="catalog-tabs__desk-item" data-target="one">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, culpa labore quo dolor aut ad assumenda accusantium, temporibus magni perspiciatis deleniti. Et corrupti modi, voluptate voluptatem quos suscipit dolorem labore!
+        </li>
+        <li class="catalog-tabs__desk-item" data-target="two">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga odit ipsam quam sint expedita hic animi quos, ex a tempore non eaque sit libero! Illum porro necessitatibus fugit maiores nobis!
+        </li>
+        <li class="catalog-tabs__desk-item catalog-tab--active" data-target="three">
+          Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы
+        </li>
+        <li class="catalog-tabs__desk-item" data-target="four">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum explicabo vero tempore ipsam odio dolor rem doloribus vel saepe, repellendus voluptatum veniam deleniti nisi aspernatur officiis quo cupiditate placeat iste.
+        </li>
+        <li class="catalog-tabs__desk-item" data-target="five">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vero corporis, fugiat illum, accusantium odit ab magnam, perferendis dignissimos enim nihil tenetur error assumenda voluptatibus animi possimus quas veniam quos?
+        </li>
+      </ul>
+      <div class="catalog__container">
+        <ul class="catalog__artist-list">
+          <li class="catalog__artist-item" data-artist="1-1-1">
+            <img class="artist-item__img" src="./img/catalog/artists/1-1-1.jpg" alt="Художник из Франции 1">
+            <h3 class="artist-item__title">
+              Художник из Франции 1
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum maxime minima laudantium provident eum quod blanditiis eaque. Quo incidunt nihil possimus reiciendis. Laboriosam amet praesentium deleniti fugit quibusdam similique vitae?
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="2-1-1">
+            <img class="artist-item__img" src="./img/catalog/artists/2-1-1.jpg" alt="Художник из Германии 1">
+            <h3 class="artist-item__title">
+              Художник из Германии 1
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia vitae cupiditate delectus deleniti esse debitis magni, praesentium aperiam nulla ab voluptatum sed quidem voluptas laborum, modi rerum incidunt adipisci. Asperiores?
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-1">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-1.jpg" alt="Бенедетто ди Биндо">
+            <h3 class="artist-item__title">
+              Бенедетто ди Биндо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem cupiditate quod, nisi quasi minus placeat, minima unde alias eum fuga animi vitae ducimus magni nam? Fugiat expedita ab consectetur earum.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-2">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-2.jpg" alt="Бергоньоне, Амброджо">
+            <h3 class="artist-item__title">
+              Бергоньоне, Амброджо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat deserunt magnam reprehenderit nisi obcaecati quae voluptatibus reiciendis cum minima quaerat dignissimos perspiciatis, voluptatem assumenda beatae architecto expedita cupiditate. Ratione, laudantium.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-3">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-3.jpg" alt="Биссоло, Франческо">
+            <h3 class="artist-item__title">
+              Биссоло, Франческо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis officia blanditiis rem tempore magnam laboriosam eos magni fuga consectetur dolores quidem eligendi quisquam, veritatis deserunt et quae adipisci! Unde, tenetur.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-4">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-4.jpg" alt="Больтраффио, Джованни">
+            <h3 class="artist-item__title">
+              Больтраффио, Джованни
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, dolorum corporis! Molestias debitis architecto quisquam aliquam ad id nemo dolorum iste similique quos fuga incidunt, commodi accusamus quod, est saepe.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-5">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-5.jpg" alt="Больтраффио, Джованни">
+            <h3 class="artist-item__title">
+              Бонсиньори, Франческо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus dolores minima eaque et suscipit labore totam rem, mollitia fuga similique laudantium dicta ex pariatur tempora veritatis fugiat vero! Labore, vitae?
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-6">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-6.jpg" alt="Боттичини, Рафаэлло">
+            <h3 class="artist-item__title">
+              Боттичини, Рафаэлло
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem unde, assumenda modi, fuga a vitae porro fugit asperiores dolorum, veniam sit odit autem nam voluptatem? Voluptas soluta inventore dolorum officiis.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-7">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-7.jpg" alt="Брамантино">
+            <h3 class="artist-item__title">
+              Брамантино
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt non alias pariatur hic id. Sapiente totam iure possimus est maiores inventore deserunt enim asperiores. Illum reprehenderit et minus. Nesciunt, illo?
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-8">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-8.jpg" alt="Бреа, Людовико">
+            <h3 class="artist-item__title">
+              Бреа, Людовико
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam expedita hic odit eveniet aut eaque reiciendis ratione, ea magni excepturi animi voluptate, possimus consequuntur alias! Aliquid doloremque molestias fugit at!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-9">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-9.jpg" alt="Бьяджо д’Антонио Туччи">
+            <h3 class="artist-item__title">
+              Бьяджо д’Антонио Туччи
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat alias nulla ipsum amet, quas, eaque consequuntur accusantium dolores temporibus, reiciendis voluptatem eos. Veritatis porro amet et iure ratione fugit inventore?
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-10">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-10.jpg" alt="Веккьетта">
+            <h3 class="artist-item__title">
+              Веккьетта
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt exercitationem nisi ab eum vero. Animi, corrupti. Sequi nemo provident reprehenderit placeat repudiandae. Excepturi officia harum eius quo sunt fuga laboriosam!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-11">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-11.jpg" alt="Андреа Верроккьо">
+            <h3 class="artist-item__title">
+              Андреа Верроккьо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe voluptatum aliquid repudiandae. Impedit ducimus velit cupiditate, perspiciatis sed rem vel sequi atque sint qui nam fugit fuga ratione dolore enim?
+            </p>
+          </li>
+          <li class="catalog__artist-item catalog-tab--active" data-artist="3-1-12">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-12.jpg" alt="Доменико Гирландайо">
+            <h3 class="artist-item__title">
+              Доменико Гирландайо
+            </h3>
+            <div class="artist-item__dates">
+              2 июня 1448 — 11 января 1494.
+            </div>
+            <p class="artist-item__desk">
+              Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-13">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-13.jpg" alt="Беноццо Гоццоли">
+            <h3 class="artist-item__title">
+              Беноццо Гоццоли
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sequi ad vero earum, aperiam iusto eligendi rem cum accusantium, magni, consectetur unde laudantium ipsum! Laborum laboriosam quidem natus sint culpa!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-14">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-14.jpg" alt="Граначчи, Франческо">
+            <h3 class="artist-item__title">
+              Граначчи, Франческо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, asperiores. Consequuntur repellat sequi temporibus perferendis totam ratione vitae est eaque labore. Impedit aut blanditiis cum libero molestias perspiciatis voluptate ipsam.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-15">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-15.jpg" alt="Грегорио ди Чекко">
+            <h3 class="artist-item__title">
+              Грегорио ди Чекко
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo quam facere magnam ullam, molestiae, cum labore commodi deleniti consequuntur nesciunt iste vel. Enim alias pariatur temporibus, eligendi cupiditate adipisci iusto!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-16">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-16.jpg" alt="Джованни да Удине">
+            <h3 class="artist-item__title">
+              Джованни да Удине
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, ipsam consequatur, harum dolore vel illum pariatur nemo, autem qui ullam molestiae sequi possimus quod. Iste, rerum consequatur? Cupiditate, delectus sequi.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-17">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-17.jpg" alt="Джованни ди Паоло">
+            <h3 class="artist-item__title">
+              Джованни ди Паоло
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, nam ipsa soluta sint distinctio magnam nemo. Quidem sint dolorem excepturi vitae neque? Nostrum vitae expedita dolor itaque delectus dolorum rerum!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-18">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-18.jpg" alt="Джорджоне">
+            <h3 class="artist-item__title">
+              Джорджоне
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi vero quidem rerum placeat unde esse assumenda possimus atque odio ducimus molestiae deserunt consectetur libero, quam ex blanditiis expedita recusandae beatae.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-19">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-19.jpg" alt="Парентино, Бернардо">
+            <h3 class="artist-item__title">
+              Парентино, Бернардо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ipsum doloribus autem aut suscipit mollitia odio laborum velit ut esse nulla laboriosam illum, magni nobis dolore. Quas animi numquam odit!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-20">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-20.jpg" alt="Пезеллино">
+            <h3 class="artist-item__title">
+              Пезеллино
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quia? Nisi accusamus quas libero. Quaerat sapiente perspiciatis ut at tempore animi optio placeat cumque! Facilis, quasi! Pariatur architecto consequatur animi.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-21">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-21.jpg" alt="Пьетро Перуджино">
+            <h3 class="artist-item__title">
+              Пьетро Перуджино
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestias reprehenderit voluptatum et est, magnam consectetur sunt soluta error deleniti recusandae at laborum pariatur quos? Qui modi consequuntur minus eum!
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-22">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-22.jpg" alt="Перуцци, Бальдассаре">
+            <h3 class="artist-item__title">
+              Перуцци, Бальдассаре
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, officia? Consequuntur commodi ipsa molestiae fuga, sed doloremque incidunt rem? A at earum adipisci rem odit cum officia, harum eum quam.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-23">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-23.jpg" alt="Пизанелло">
+            <h3 class="artist-item__title">
+              Пизанелло
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat facilis iusto iure quod voluptatum tenetur doloremque quo voluptatibus deleniti, suscipit magni ad laborum adipisci quis animi debitis incidunt blanditiis recusandae.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="3-1-24">
+            <img class="artist-item__img" src="./img/catalog/artists/3-1-24.jpg" alt="Пинтуриккьо">
+            <h3 class="artist-item__title">
+              Пинтуриккьо
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, fugiat ab eius nam ratione quas asperiores magni. Vel necessitatibus provident, et doloribus facilis ratione consectetur pariatur voluptatum ab dolorum ad?
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="4-1-1">
+            <img class="artist-item__img" src="./img/catalog/artists/4-1-1.jpg" alt="Художник из России 1">
+            <h3 class="artist-item__title">
+              Художник из России 1
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum a ab nulla reprehenderit laudantium nostrum, officiis dolor provident ut ipsam veniam? Perferendis aut illum quo aperiam quos consequuntur temporibus fuga.
+            </p>
+          </li>
+          <li class="catalog__artist-item" data-artist="5-1-1">
+            <img class="artist-item__img" src="./img/catalog/artists/5-1-1.jpg" alt="Художник из Бельгии 1">
+            <h3 class="artist-item__title">
+              Художник из Бельгии 1
+            </h3>
+            <div class="artist-item__dates">
+              дата1 - дата2.
+            </div>
+            <p class="artist-item__desk">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio officia rerum voluptatum recusandae? Aspernatur et accusantium impedit iste autem a quia beatae veritatis voluptas non harum aliquid, quidem reprehenderit!
+            </p>
+          </li>
+        </ul>
+        <ul class="catalog__years-list" id="accordion">
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 1400 по 1499 гг.
+            </h3>
+            <p>
+              <button class="years-item__btn" data-target="one" data-path="1-1-1">Художник из Франции 1</button>
+              <button class="years-item__btn" data-target="two" data-path="2-1-1">Художник из Германии 1</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-1">Бенедетто ди Биндо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-2"> Бергоньоне, Амброджо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-3">Биссоло, Франческо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-4">Больтраффио, Джованни</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-5">Бонсиньори, Франческо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-6">Боттичини, Рафаэлло</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-7">Брамантино</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-8">Бреа, Людовико</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-9">Бьяджо д’Антонио Туччи</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-10">Веккьетта</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-11">Андреа Верроккьо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-12">Доменико Гирландайо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-13">Беноццо Гоццоли</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-14">Граначчи, Франческо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-15">Грегорио ди Чекко</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-16">Джованни да Удине</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-17">Джованни ди Паоло</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-18">Джорджоне</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-19">Парентино, Бернардо</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-20">Пезеллино</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-21">Пьетро Перуджино</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-22">Перуцци, Бальдассаре</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-23">Пизанелло</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three" data-path="3-1-24">Пинтуриккьо</button>
+              <button class="years-item__btn" data-target="four" data-path="4-1-1">Художник из России 1</button>
+              <button class="years-item__btn" data-target="five" data-path="5-1-1">Художник из Бельгии 1</button>
+            </p>
+          </li>
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 1500 по 1599 гг.
+            </h3>
+            <p class="years-item__artists" data-target="one">
+              <button class="years-item__btn" data-target="one">Художник из Франции 2</button>
+              <button class="years-item__btn" data-target="two">Художник из Германии 2</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three">Художник из Италии 2</button>
+              <button class="years-item__btn" data-target="four">Художник из России 2</button>
+              <button class="years-item__btn" data-target="five">Художник из Бельгии 2</button>
+            </p>
+          </li>
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 1600 по 1699 гг.
+            </h3>
+            <p class="years-item__artists" data-target="one">
+              <button class="years-item__btn" data-target="one">Художник из Франции 3</button>
+              <button class="years-item__btn" data-target="two">Художник из Германии 3</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three">Художник из Италии 3</button>
+              <button class="years-item__btn" data-target="four">Художник из России 3</button>
+              <button class="years-item__btn" data-target="five">Художник из Бельгии 3</button>
+            </p>
+          </li>
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 1700 по 1799 гг.
+            </h3>
+            <p class="years-item__artists" data-target="one">
+              <button class="years-item__btn" data-target="one">Художник из Франции 4</button>
+              <button class="years-item__btn" data-target="two">Художник из Германии 4</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three">Художник из Италии 4</button>
+              <button class="years-item__btn" data-target="four">Художник из России 4</button>
+              <button class="years-item__btn" data-target="five">Художник из Бельгии 4</button>
+            </p>
+          </li>
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 1800 по 1899 гг.
+            </h3>
+            <p class="years-item__artists" data-target="one">
+              <button class="years-item__btn" data-target="one">Художник из Франции 5</button>
+              <button class="years-item__btn" data-target="two">Художник из Германии 5</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three">Художник из Италии 5</button>
+              <button class="years-item__btn" data-target="four">Художник из России 5</button>
+              <button class="years-item__btn" data-target="five">Художник из Бельгии 5</button>
+            </p>
+          </li>
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 1900 по 1999 гг.
+            </h3>
+            <p class="years-item__artists" data-target="one">
+              <button class="years-item__btn" data-target="one">Художник из Франции 6</button>
+              <button class="years-item__btn" data-target="two">Художник из Германии 6</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three">Художник из Италии 6</button>
+              <button class="years-item__btn" data-target="four">Художник из России 6</button>
+              <button class="years-item__btn" data-target="five">Художник из Бельгии 6</button>
+            </p>
+          </li>
+          <li class="catalog__years-item">
+            <h3 class="years-item__title">
+              C 2000 г.
+            </h3>
+            <p class="years-item__artists" data-target="one">
+              <button class="years-item__btn" data-target="one">Художник из Франции 7</button>
+              <button class="years-item__btn" data-target="two">Художник из Германии 7</button>
+              <button class="years-item__btn catalog-tab--active" data-target="three">Художник из Италии 7</button>
+              <button class="years-item__btn" data-target="four">Художник из России 7</button>
+              <button class="years-item__btn" data-target="five">Художник из Бельгии 7</button>
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -413,38 +902,41 @@
       <h2 class="section-heading" id="events">
         События
       </h2>
-      <ul class="events__list">
-        <li class="events__item events__item--one">
-          <div class="events__item-place">Музей им. Щусева<br> с 20 марта по 30 апреля</div>
-          <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
-          <p class="events__item-desk">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
-          <a class="events__item-link" href="#">Подробнее</a>
-        </li>
-        <li class="events__item events__item--two">
-          <div class="events__item-place">ММОМА<br> 24 марта 19:00</div>
-          <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
-          <p class="events__item-desk">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</p>
-          <a class="events__item-link" href="#">Подробнее</a>
-        </li>
-        <li class="events__item events__item--three">
-          <div class="events__item-place">Еврейский музей<br> с 31 марта по 21 апреля</div>
-          <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
-          <p class="events__item-desk">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы..</p>
-          <a class="events__item-link" href="#">Подробнее</a>
-        </li>
-        <li class="events__item events__item--four events__item--none">
-          <div class="events__item-place">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</div>
-          <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
-          <p class="events__item-desk">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
-          <a class="events__item-link" href="#">Подробнее</a>
-        </li>
-        <li class="events__item events__item--five events__item--none">
-          <div class="events__item-place">ММАМ<br> с 8 апреля по 20 мая</div>
-          <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-          <p class="events__item-desk">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
-          <a class="events__item-link" href="#">Подробнее</a>
-        </li>
-      </ul>
+      <div class="swiper-container-events">
+        <ul class="events__list">
+          <li class="events__item events__item--one">
+            <div class="events__item-place">Музей им. Щусева<br> с 20 марта по 30 апреля</div>
+            <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+            <p class="events__item-desk">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+            <a class="events__item-link" href="#">Подробнее</a>
+          </li>
+          <li class="events__item events__item--two">
+            <div class="events__item-place">ММОМА<br> 24 марта 19:00</div>
+            <h3 class="events__item-title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+            <p class="events__item-desk">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки новых принципов формирования...</p>
+            <a class="events__item-link" href="#">Подробнее</a>
+          </li>
+          <li class="events__item events__item--three">
+            <div class="events__item-place">Еврейский музей<br> с 31 марта по 21 апреля</div>
+            <h3 class="events__item-title">Книжная гравюра в живом восприятии</h3>
+            <p class="events__item-desk">Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в формировании глубокомысленных рассуждений. Также как перспективное планирование играет определяющее значение для новых принципов формирования материально-технической и кадровой базы..</p>
+            <a class="events__item-link" href="#">Подробнее</a>
+          </li>
+          <li class="events__item events__item--four events__item--none">
+            <div class="events__item-place">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</div>
+            <h3 class="events__item-title">XXIV Международная биеннале молодого искусства</h3>
+            <p class="events__item-desk">Внезапно, реплицированные с зарубежных источников, современные исследования представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть рассмотрены исключительно в разрезе маркетинговых и финансовых...</p>
+            <a class="events__item-link" href="#">Подробнее</a>
+          </li>
+          <li class="events__item events__item--five events__item--none">
+            <div class="events__item-place">ММАМ<br> с 8 апреля по 20 мая</div>
+            <h3 class="events__item-title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+            <p class="events__item-desk">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело.</p>
+            <a class="events__item-link" href="#">Подробнее</a>
+          </li>
+        </ul>
+        <div class="swiper-pagination swiper-pagination-events"></div>
+      </div>
       <button class="events__btn">Все события</button>
     </div>
   </section>
