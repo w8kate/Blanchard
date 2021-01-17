@@ -56,11 +56,13 @@
 
 
 
-  let arrYears = document.querySelectorAll('.years-item__title')
+  let arrYears = document.querySelectorAll('.years-item')
+  let arrYearsTitle = document.querySelectorAll('.years-item__title')
+  let arrYearsTitleIcon = document.querySelectorAll('.years-item__title-icon')
     document.addEventListener('click', function(event) {
       let target = event.target;
       for (let i = 0; i < 7; i++) {
-        if (arrYears[i] === target) {
+        if (arrYears[i] === target || arrYearsTitle[i] === target || arrYearsTitleIcon[i] === target) {
           arrYears.forEach(element => {
             element.classList.remove('years-item__title--border-active')
           });
