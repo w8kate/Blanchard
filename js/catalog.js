@@ -10,8 +10,6 @@
 		heightStyle: "content"
     });
 
-    $("#accordion").accordion({ header: "h3", active: false });
-
     $('#accordion').accordion({animate: {easing:'linear', duration: 300}});
 
 
@@ -47,10 +45,31 @@
       document.querySelectorAll('.catalog__artist-item').forEach(function(artistContent) {
         artistContent.classList.remove('catalog-tab--active')
       })
+      document.querySelectorAll('.years-item__btn').forEach(function(tabButton) {
+        tabButton.classList.remove('years-item__btn--active')
+      })
 
       document.querySelector(`[data-artist="${path}"]`).classList.add('catalog-tab--active')
+      artistBtn.classList.add('years-item__btn--active')
     })
   });
+
+
+
+  let arrYears = document.querySelectorAll('.years-item__title')
+    document.addEventListener('click', function(event) {
+      let target = event.target;
+      for (let i = 0; i < 7; i++) {
+        if (arrYears[i] === target) {
+          arrYears.forEach(element => {
+            element.classList.remove('years-item__title--border-active')
+          });
+          if (arrYears[i + 1]) {
+            arrYears[i + 1].classList.add('years-item__title--border-active')
+          }
+        }
+      }
+    })
 
 })();
 
