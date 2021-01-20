@@ -1326,6 +1326,10 @@ div[aria-selected="true"] {
 
 @media (max-width: 1919.98px) {
 
+  .section-gallery-container {
+    padding-bottom: 80px;
+  }
+
   .choices {
     width: 280px;
   }
@@ -1468,6 +1472,7 @@ div[aria-selected="true"] {
 /* Catalog */
 
 .section-container-catalog {
+  padding-top: 80px;
   padding-bottom: 0px;
 }
 
@@ -1787,6 +1792,10 @@ div[aria-selected="true"] {
 }
 
 @media (max-width: 1919.98px) {
+
+  .section-container-catalog {
+    padding-top: 80px;
+  }
 
   .catalog-tabs__desk-item {
     max-width: 925px;
