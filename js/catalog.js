@@ -7,8 +7,10 @@
     } );
 
     $("#accordion").accordion({
-		heightStyle: "content"
+		  heightStyle: "content"
     });
+
+    $("#accordion").accordion({ header: "h3", collapsible: true});
 
     $('#accordion').accordion({animate: {easing:'linear', duration: 300}});
 
@@ -66,7 +68,7 @@
           arrYears.forEach(element => {
             element.classList.remove('years-item__title--border-active')
           });
-          if (arrYears[i + 1]) {
+          if (arrYears[i + 1] && arrYears[i].classList.contains('ui-accordion-header-active')) {
             arrYears[i + 1].classList.add('years-item__title--border-active')
           }
         }

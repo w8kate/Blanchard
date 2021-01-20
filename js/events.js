@@ -2,6 +2,7 @@ document.querySelector('.events__btn').addEventListener('click', function() {
   document.querySelectorAll('.events__item').forEach(element => {
     element.classList.remove('events__item--none');
   });
+  document.querySelector('.events__btn').classList.add('events__btn--none');
 })
 
 if (screen.width >= 768 && screen.width < 1024) {

@@ -231,11 +231,11 @@
       searchEnabled: false, itemSelectText: '', shouldSort: false
     });
 
-  if (document.querySelector('.choises__list').classList.contains('is-active')) {
-    document.querySelectorAll('.choises__item').forEach(element => {
-      element.tabIndex = "1";
-    });
-  }
+    document.querySelector('.choises__list').addEventListener('click', function() {
+      document.querySelectorAll('.choises__item').forEach(element => {
+        element.tabIndex = "0";
+      });
+    })
 
 })();
 
