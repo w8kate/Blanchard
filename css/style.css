@@ -297,6 +297,7 @@ img {
   position: absolute;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 .header-list {
@@ -445,14 +446,6 @@ img {
 
 .scrollbar__list-item--third--two {
   background-image: url(../img/header/jpg/3.2.jpg);
-}
-
-.scrollbar__list-item--third--three {
-  background-image: url(../img/header/jpg/3.3.jpg);
-}
-
-.scrollbar__list-item--third--four {
-  background-image: url(../img/header/jpg/3.4.jpg);
 }
 
 .scrollbar__list-item--fourth--one {
@@ -886,25 +879,56 @@ img {
 /* Hero */
 
 .section-hero {
-  background-image: url(../img/hero/1.jpg);
+  position: relative;
+}
+
+.swiper-container-hero {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide-hero {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  animation: anim 15s alternate linear infinite;
+}
+
+.swiper-slide-hero-one {
+  background-image: url(../img/hero/1.jpg);
+}
+
+.swiper-slide-hero-two {
+  background-image: url(../img/hero/2.jpg);
+}
+
+.swiper-slide-hero-three {
+  background-image: url(../img/hero/3.jpg)
+}
+
+.swiper-slide-active {
+  animation: anim 10s alternate linear infinite;
 }
 
 @keyframes anim {
   0% {
-    background-size: 100% 100%;
+    transform: scale(1);
   }
 
   50% {
-    background-size: 115% 115%;
+    transform: scale(1.2);
   }
 
   100% {
-    background-size: 100% 100%;
+    transform: scale(1);
   }
+}
+
+.section-hero-container {
+  position: relative;
+  z-index: 5;
 }
 
 .hero__title {
@@ -967,9 +991,16 @@ img {
 
 @media (max-width: 1919.98px) {
 
-  .section-hero {
+  .swiper-slide-hero-one {
     background-image: url(../img/hero/1-1024.jpg);
-    animation: none;
+  }
+
+  .swiper-slide-hero-two {
+    background-image: url(../img/hero/2-1024.jpg);
+  }
+
+  .swiper-slide-hero-three {
+    background-image: url(../img/hero/3-1024.jpg);
   }
 
   .hero__title {
@@ -989,15 +1020,31 @@ img {
 
 @media (max-width: 1023.98px) {
 
-  .section-hero {
+  .swiper-slide-hero-one {
     background-image: url(../img/hero/1-768.jpg);
+  }
+
+  .swiper-slide-hero-two {
+    background-image: url(../img/hero/2-768.jpg);
+  }
+
+  .swiper-slide-hero-three {
+    background-image: url(../img/hero/3-768.jpg);
   }
 }
 
 @media (max-width: 767.98px) {
 
-  .section-hero {
+  .swiper-slide-hero-one {
     background-image: url(../img/hero/1-320.jpg);
+  }
+
+  .swiper-slide-hero-two {
+    background-image: url(../img/hero/2-320.jpg);
+  }
+
+  .swiper-slide-hero-three {
+    background-image: url(../img/hero/3-320.jpg);
   }
 
   .hero__title {

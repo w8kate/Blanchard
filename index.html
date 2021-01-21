@@ -22,7 +22,8 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
   <script defer src="./js/script.js"></script>
-  <script defer src="./js/swiper.js"></script>
+  <script defer src="./js/hero.js"></script>
+  <script defer src="./js/gallery.js"></script>
   <script defer src="./js/catalog.js"></script>
   <script defer src="./js/events.js"></script>
 
@@ -189,24 +190,6 @@
                 <li class="scrollbar__list-item scrollbar__list-item--third--two">
                   <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сезанн</a>
                 </li>
-                <!-- <li class="scrollbar__list-item scrollbar__list-item--third--three">
-                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Гоген</a>
-                </li>
-                <li class="scrollbar__list-item scrollbar__list-item--third--four">
-                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сёра</a>
-                </li>
-                <li class="scrollbar__list-item scrollbar__list-item--third--one">
-                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Ван Гог</a>
-                </li>
-                <li class="scrollbar__list-item scrollbar__list-item--third--two">
-                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сезанн</a>
-                </li>
-                <li class="scrollbar__list-item scrollbar__list-item--third--three">
-                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Гоген</a>
-                </li>
-                <li class="scrollbar__list-item scrollbar__list-item--third--four">
-                  <a class="scrollbar__list-item-elem" href="#" tabindex="-1">Сёра</a>
-                </li> -->
               </ul>
             </div>
           </li>
@@ -306,7 +289,7 @@
 
   <!-- Hero -->
   <section class="section-hero">
-    <div class="container">
+    <div class="container section-hero-container">
       <main class="main">
         <h2 class="hero__title">
           Прикоснитесь к прекрасному
@@ -318,6 +301,13 @@
       <a class="hero__button" href="#contacts" aria-label="Подписаться на рассылку">
         Подписаться на рассылку
       </a>
+    </div>
+    <div class="swiper-container swiper-container-hero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide-hero swiper-slide-hero-one"></div>
+        <div class="swiper-slide swiper-slide-hero swiper-slide-hero-two"></div>
+        <div class="swiper-slide swiper-slide-hero swiper-slide-hero-three"></div>
+      </div>
     </div>
   </section>
 
