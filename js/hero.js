@@ -5,7 +5,7 @@ let swiperHero = new Swiper('.swiper-container-hero', {
 let timerId;
 
 clearInterval(timerId)
-timerId = setInterval(nextSlide, 10000);
+timerId = setInterval(nextSlide, 6000);
 
 function nextSlide() {
   swiperHero.slideNext(1000, true);

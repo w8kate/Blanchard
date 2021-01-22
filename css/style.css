@@ -37,6 +37,7 @@
   --gallery-swiper-buttons: #666666;
   --events-border: #CACACA;
   --catalog-accordion: #ECECEC;
+  --modal-years: #969696;
 }
 
 * {
@@ -49,6 +50,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+  color: var(--font-color);
 }
 
 a {
@@ -369,16 +371,19 @@ img {
 }
 
 .header-list__item-scrollbar {
-  display: none;
   position: absolute;
   padding: 40px;
   width: 300px;
   max-height: 300px;
   background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out;
 }
 
 .header-list__item-scrollbar--active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 .scrollbar__list {
@@ -908,8 +913,8 @@ img {
   background-image: url(../img/hero/3.jpg)
 }
 
-.swiper-slide-active {
-  animation: anim 10s alternate linear infinite;
+.swiper-slide-active.swiper-slide-hero {
+  animation: anim 6s alternate linear infinite;
 }
 
 @keyframes anim {
@@ -918,7 +923,7 @@ img {
   }
 
   50% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 
   100% {
@@ -1371,6 +1376,111 @@ div[aria-selected="true"] {
   background-color: var(--header-scrollbar);
 }
 
+.gallery-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms, visibility 200ms;
+}
+
+.gallery-modal::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.gallery-modal__container {
+  position: relative;
+  width: 900px;
+  margin: 50px auto;
+  display: none;
+  vertical-align: middle;
+  background-color: var(--white-color);
+  cursor: default;
+  text-align: left;
+}
+
+.gallery-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  background-image: url(../img/gallery/cross.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.gallery-modal__content {
+  display: flex;
+}
+
+.gallery-modal__img {
+  width: 400px;
+  height: 500px;
+  background-image: url(../img/gallery/modal/1.2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.gallery-modal__info {
+  padding: 121px 50px 50px 50px;
+  width: 500px;
+}
+
+.gallery-modal__artist {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.gallery-modal__name {
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.gallery-modal__years {
+  margin-bottom: 41px;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--modal-years);
+}
+
+.gallery-modal.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 200ms, visibility 200ms;
+}
+
+.gallery-modal__container.modal-open {
+  display: inline-block;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+.fade.animate-open {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+
 @media (max-width: 1919.98px) {
 
   .section-gallery-container {
@@ -1411,6 +1521,19 @@ div[aria-selected="true"] {
   .swiper-slide-gallery__img {
     width: 280px;
     height: 280px;
+  }
+
+  .gallery-modal__container {
+    width: 594px;
+  }
+
+  .gallery-modal__img {
+    width: 264px;
+    height: 594px;
+  }
+
+  .gallery-modal__info {
+    width: 330px;
   }
 }
 
@@ -1454,6 +1577,19 @@ div[aria-selected="true"] {
 
   .swiper-slide-gallery__img {
     width: 317px !important;
+  }
+
+  .gallery-modal__container {
+    width: 668px;
+  }
+
+  .gallery-modal__img {
+    width: 301px;
+    height: 594px;
+  }
+
+  .gallery-modal__info {
+    width: 367px;
   }
 }
 
@@ -1513,6 +1649,37 @@ div[aria-selected="true"] {
   .swiper-slide-gallery__img {
     width: 290px !important;
     height: 367px;
+  }
+
+  .gallery-modal__container {
+    width: 290px;
+  }
+
+  .gallery-modal__close {
+    top: 10px;
+    right: 10px;
+  }
+
+  .gallery-modal__content {
+    display: block;
+  }
+
+  .gallery-modal__img {
+    width: 290px;
+    height: 200px;
+  }
+
+  .gallery-modal__info {
+    padding: 17px 21px 26px 20px;
+    width: 290px;
+  }
+
+  .gallery-modal__artist {
+    margin-bottom: 2px;
+  }
+
+  .gallery-modal__years {
+    margin-bottom: 12px;
   }
 }
 
