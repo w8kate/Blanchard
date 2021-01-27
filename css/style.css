@@ -1901,7 +1901,7 @@ div[aria-selected="true"] {
   content: '';
   position: absolute;
   top: -9px;
-  left: -11px;
+  left: -10px;
   border: 2px solid var(--header-scrollbar);
   border-radius: 100px;
   width: 60px;
