@@ -1626,16 +1626,17 @@ div[aria-selected="true"] {
 
 @media (max-width: 1919.98px) {
 
+  .section-gallery-container {
+    padding-bottom: 77px;
+    padding-top: 82px;
+  }
+
   .gallery__select-title {
     padding-top: 10px;
   }
 
-  .section-gallery-container {
-    padding-bottom: 77px;
-  }
-
   .swiper-wrapper-gallery {
-    margin-top: 36px;
+    margin-top: 25px;
     margin-left: -5px;
   }
 
@@ -1654,7 +1655,8 @@ div[aria-selected="true"] {
   }
 
   .swiper-slide-gallery {
-    width: 280px;
+    margin-top: 5px;
+    width: 285px !important;
     height: 280px;
   }
 
@@ -1743,6 +1745,10 @@ div[aria-selected="true"] {
 
 @media (max-width: 767.98px) {
 
+  .section-gallery-container {
+    padding-top: 50px;
+  }
+
   .gallery-info {
     margin-bottom: 55px;
   }
@@ -1757,26 +1763,26 @@ div[aria-selected="true"] {
   }
 
   .swiper-container-gallery {
-    margin-top: 35px;
-    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 6px;
     width: 290px;
     height: 465px;
   }
 
   .swiper-pages {
     position: absolute;
-    top: 415px;
-    left: 65px;
+    top: 421px;
+    left: 70px;
   }
 
   .swiper-button-next,
   .swiper-button-prev {
-    top: 415px;
+    top: 421px;
     margin-top: 0;
   }
 
   .swiper-button-next {
-    left: 175px;
+    left: 180px;
   }
 
   .swiper-button-prev {
@@ -1830,7 +1836,7 @@ div[aria-selected="true"] {
 /* Catalog */
 
 .section-container-catalog {
-  padding-top: 80px;
+  padding-top: 85px;
   padding-bottom: 0px;
 }
 
@@ -1894,12 +1900,12 @@ div[aria-selected="true"] {
 .catalog-tab__btn--active::before {
   content: '';
   position: absolute;
-  top: -12px;
-  left: -12px;
+  top: -9px;
+  left: -11px;
   border: 2px solid var(--header-scrollbar);
-  border-radius: 50px;
-  width: 62px;
-  height: 62px;
+  border-radius: 100px;
+  width: 60px;
+  height: 58px;
 }
 
 .catalog-tab__btn:hover {
@@ -1921,7 +1927,6 @@ div[aria-selected="true"] {
 
 .catalog-tabs__desk-item {
   display: none;
-  margin-top: 3px;
   max-width: 1080px;
 }
 
@@ -1964,10 +1969,10 @@ div[aria-selected="true"] {
 .years-item__btn {
   display: none;
   margin-left: -1px;
+  margin-right: 65px;
   padding: 0px;
   padding-top: 7px;
   padding-bottom: 7px;
-  width: 258px;
   text-align: start;
   border: none;
   background-color: var(--white-color);
@@ -2174,6 +2179,7 @@ div[aria-selected="true"] {
 
   .catalog__artist-list {
     margin-right: 50px;
+    margin-top: 3px;
   }
 
   .artist-item__img {
@@ -2192,9 +2198,17 @@ div[aria-selected="true"] {
   .years-item__artists {
     max-width: 437px;
   }
+
+  .years-item__btn {
+    margin-right: 55px;
+  }
 }
 
 @media (max-width: 1023.98px) {
+
+  .catalog-tabs__desk-list {
+    margin-bottom: 20px;
+  }
 
   .catalog-tabs__desk-item {
     max-width: 100%;
@@ -2205,7 +2219,7 @@ div[aria-selected="true"] {
   }
 
   .catalog__years-list {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     width: 100%;
   }
 
@@ -2227,8 +2241,10 @@ div[aria-selected="true"] {
   }
 
   .years-item__btn {
-    width: 238px;
-    padding-right: 34px;
+    margin-right: 35px;
+    padding-top: 4px;
+    padding-bottom: 9px;
+    min-width: 208px;
   }
 
   .years-item__artists {
@@ -2247,30 +2263,35 @@ div[aria-selected="true"] {
     flex-direction: column;
   }
 
+  .catalog-tabs {
+    margin-top: -6px;
+  }
+
   .catalog-tab:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 28px;
   }
 
   .catalog-tab__btn {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     background-size: contain;
   }
 
   .catalog-tab__btn--active::before {
-    top: -7px;
-    left: -7px;
+    top: -5px;
+    left: -5px;
     width: 38px;
     height: 38px;
   }
 
   .catalog__years-list {
-    margin-top: -25px;
+    margin-top: -9px;
     width: 100%;
   }
 
   .ui-accordion-content {
     height: 790px;
+    margin-bottom: 0px;
   }
 
   .artist-item__img {
@@ -2283,6 +2304,15 @@ div[aria-selected="true"] {
 
   .ui-accordion-header {
     height: 73px;
+  }
+
+  .years-item {
+    height: 75px;
+  }
+
+  .years-item__btn {
+    padding-top: 0px;
+    padding-bottom: 13.5px;
   }
 
   .years-item__title {
@@ -2305,6 +2335,11 @@ div[aria-selected="true"] {
   .ui-accordion-header-active .years-item__title-icon::before {
     top: 8px;
     left: 10px;
+  }
+
+  .artist-item__title {
+    margin-top: -8px;
+    margin-bottom: 13px;
   }
 }
 
@@ -2476,7 +2511,7 @@ div[aria-selected="true"] {
 @media (max-width: 1919.98px) {
 
   .events__list {
-    margin-top: -15px;
+    margin-top: -30px;
     margin-left: auto;
     margin-right: auto;
     width: 924px;
@@ -2510,12 +2545,14 @@ div[aria-selected="true"] {
 @media (max-width: 1023.98px) {
 
   .events__list {
+    margin-top: -40px;
     width: 668px;
   }
 
   .events__item {
+    padding: 217px 18px 106px 35px;
     width: 317px;
-    background-size: 317px 200px;
+    background-size: 317px 203px;
   }
 
   .events__item:not(:nth-child(3n)) {
@@ -2537,6 +2574,10 @@ div[aria-selected="true"] {
     margin-top: 34px;
   }
 
+  .events__item-title {
+    max-width: 253px;
+  }
+
   .events__item-desk {
     max-width: 243px;
   }
@@ -2553,11 +2594,12 @@ div[aria-selected="true"] {
   }
 
   .events__list {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   .swiper-container-events {
     position: relative;
+    margin-top: -10px;
     padding-bottom: 40px;
     width: 290px;
     height: 880px;
@@ -2567,14 +2609,12 @@ div[aria-selected="true"] {
     display: static;
     flex-wrap: nowrap;
     margin-bottom: 0px;
-  }
-
-  .events__list {
     width: 290px;
   }
 
   .events__item {
     padding: 214px 10px 108px 28px;
+    background-size: 317px 200px;
   }
 
   .events__item:not(:nth-child(2n)) {
@@ -2584,6 +2624,10 @@ div[aria-selected="true"] {
   .events__item:not(:nth-child(1)),
   .events__item:not(:nth-child(2)) {
     margin-top: 0px;
+  }
+
+  .events__item-title {
+    margin-bottom: 35px;
   }
 
   .events__item-desk {
