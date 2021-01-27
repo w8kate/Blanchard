@@ -1969,10 +1969,11 @@ div[aria-selected="true"] {
 .years-item__btn {
   display: none;
   margin-left: -1px;
-  margin-right: 65px;
+  margin-right: 48px;
   padding: 0px;
   padding-top: 7px;
-  padding-bottom: 7px;
+  padding-bottom: 6px;
+  width: 210px;
   text-align: start;
   border: none;
   background-color: var(--white-color);
@@ -2200,7 +2201,8 @@ div[aria-selected="true"] {
   }
 
   .years-item__btn {
-    margin-right: 55px;
+    margin-right: 42px;
+    padding-bottom: 7px;
   }
 }
 
