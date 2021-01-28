@@ -55,6 +55,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--font-color);
 }
 
 ul {
@@ -1979,26 +1980,26 @@ div[aria-selected="true"] {
   background-color: var(--white-color);
 }
 
-.years-item__btn:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  font-weight: 600;
-  color: var(--header-scrollbar);
-}
-
 .years-item__btn:focus-visible {
   outline: none;
   width: inherit;
   border: 2px solid var(--header-focus-color);
 }
 
-.years-item__btn:active {
+a[href="#artists"]:hover {
+  color: var(--header-scrollbar);
   text-decoration: underline;
   font-weight: 600;
-  color: var(--header-scrollbar);
+  cursor: pointer;
 }
 
-.years-item__btn--active {
+a[href="#artists"]:active {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--header-focus-color);
+}
+
+.years-item__btn--active a[href="#artists"] {
   font-weight: 600;
   color: var(--header-focus-color);
 }
@@ -2339,6 +2340,13 @@ div[aria-selected="true"] {
     left: 10px;
   }
 
+  .catalog__artist-list {
+    padding-top: 15px;
+    margin-top: -15px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
+
   .artist-item__title {
     margin-top: -8px;
     margin-bottom: 13px;
@@ -2648,3 +2656,7 @@ div[aria-selected="true"] {
     display: none;
   }
 }
+
+/* Editions */
+
+

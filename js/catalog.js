@@ -61,19 +61,37 @@
   let arrYears = document.querySelectorAll('.years-item')
   let arrYearsTitle = document.querySelectorAll('.years-item__title')
   let arrYearsTitleIcon = document.querySelectorAll('.years-item__title-icon')
-    document.addEventListener('click', function(event) {
-      let target = event.target;
-      for (let i = 0; i < 7; i++) {
-        if (arrYears[i] === target || arrYearsTitle[i] === target || arrYearsTitleIcon[i] === target) {
-          arrYears.forEach(element => {
-            element.classList.remove('years-item__title--border-active')
-          });
-          if (arrYears[i + 1] && arrYears[i].classList.contains('ui-accordion-header-active')) {
-            arrYears[i + 1].classList.add('years-item__title--border-active')
-          }
+  document.addEventListener('click', function(event) {
+    let target = event.target;
+    for (let i = 0; i < 7; i++) {
+      if (arrYears[i] === target || arrYearsTitle[i] === target || arrYearsTitleIcon[i] === target) {
+        arrYears.forEach(element => {
+          element.classList.remove('years-item__title--border-active')
+        });
+        if (arrYears[i + 1] && arrYears[i].classList.contains('ui-accordion-header-active')) {
+          arrYears[i + 1].classList.add('years-item__title--border-active')
         }
       }
-    })
+    }
+  })
+
+
+  if (screen.width < 768) {
+    document.querySelector('.catalog__artist-list').id = "artists";
+
+    const artists = document.querySelectorAll('a[href="#artists"]')
+
+    for (let artist of artists) {
+      artist.addEventListener('click', function (e) {
+        e.preventDefault()
+
+        document.querySelector('#artists').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        })
+      })
+    }
+  }
 
 })();
 
