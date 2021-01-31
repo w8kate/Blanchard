@@ -1197,6 +1197,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 75px;
 }
 
 .gallery-info {
@@ -1818,7 +1819,7 @@ div[aria-selected="true"] {
   }
 
   .swiper-wrapper-gallery {
-    margin-top: 30px;
+    margin-top: 25px;
     margin-left: -5px;
   }
 
@@ -1941,7 +1942,7 @@ div[aria-selected="true"] {
 /* Catalog */
 
 .section-container-catalog {
-  padding-top: 85px;
+  padding-top: 80px;
   padding-bottom: 0px;
 }
 
@@ -2357,6 +2358,14 @@ a[href="#artists"]:active {
 
 @media (max-width: 1023.98px) {
 
+  .catalog-tabs {
+    padding-bottom: 15px;
+  }
+
+  .catalog-tab:not(:last-child) {
+    margin-right: 55px;
+  }
+
   .catalog-tabs__desk-list {
     margin-bottom: 20px;
   }
@@ -2407,6 +2416,10 @@ a[href="#artists"]:active {
 }
 
 @media (max-width: 767.98px) {
+
+  .catalog-tabs__desk-list {
+    margin-bottom: 5px;
+  }
 
   .catalog-tabs__desk-item {
     display: none;
@@ -2513,6 +2526,7 @@ a[href="#artists"]:active {
 
 .section-container-events {
   padding-top: 75px;
+  padding-bottom: 82px;
 }
 
 .events__list {
@@ -2832,4 +2846,134 @@ a[href="#artists"]:active {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.categories__title {
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.categories__label-check {
+  position: relative;
+  margin-left: 22px;
+  color: var(--white-color);
+  cursor: pointer;
+  outline: none;
+  transition: color 200ms ease-in-out;
+}
+
+.categories__label-check:focus-visible {
+  outline: 2px solid var(--header-focus-color);
+}
+
+.categories__label-check:hover {
+  color: var(--header-hover-color);
+}
+
+.categories__label-check:hover .categories__check + .categories__check-info {
+  border: 1px solid var(--header-hover-color);
+}
+
+.categories__label-check:hover .categories__check + .categories__check-info:before {
+  opacity: 1;
+}
+
+.categories__label-check:active {
+  color: var(--header-focus-color);
+}
+
+.categories__label-check:active .categories__check + .categories__check-info {
+  border: 1px solid var(--header-focus-color);
+}
+
+.categories__label-check:active .categories__check + .categories__check-info:before {
+  background-color: var(--header-focus-color);
+  opacity: 1;
+}
+
+.categories__label-check--on {
+  color: var(--header-hover-color);
+}
+
+.categories__check {
+  display: none;
+}
+
+.categories__check + .categories__check-info {
+  position: absolute;
+  top: 6px;
+  left: -21px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--white-color);
+  transition: border 200ms ease-in-out;
+}
+
+.categories__check + .categories__check-info:before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  bottom: 0px;
+  left: 4px;
+  width: 3px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: var(--header-hover-color);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+.categories__check:checked + .categories__check-info {
+  border: 1px solid var(--header-hover-color);
+}
+
+.categories__check:checked + .categories__check-info:before {
+  opacity: 1;
+}
+
+.price__title {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.price__form {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+
+.price__interval {
+  padding: 8px 9px 8px 9px;
+  color: var(--white-color);
+}
+
+.price__btn {
+  cursor: pointer;
+}
+
+.price__input {
+  margin-left: -5px;
+  padding-left: 10px;
+  border: none;
+  width: 73px;
+  height: 40px;
+  background-color: var(--header-scrollbar);
+  color: var(--white-color);
+  outline: none;
+}
+
+.price__input::placeholder {
+  color: var(--white-color);
+}
+
+.price__input:focus {
+  caret-color: var(--white-color);
+}
+
+.price__input:focus.price__input::placeholder {
+  color: transparent;
 }
