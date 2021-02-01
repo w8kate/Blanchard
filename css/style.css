@@ -2848,6 +2848,11 @@ a[href="#artists"]:active {
   background-size: cover;
 }
 
+.section-container-editions {
+  display: flex;
+  padding-bottom: 68px;
+}
+
 .categories__title {
   font-weight: 700;
   color: var(--white-color);
@@ -2977,3 +2982,94 @@ a[href="#artists"]:active {
 .price__input:focus.price__input::placeholder {
   color: transparent;
 }
+
+.swiper-container-editions {
+  margin-top: 33px;
+  margin-left: 165px;
+  margin-right: 0px;
+  width: 1158px;
+}
+
+.swiper-wrapper-editions {
+  padding-top: 4px;
+  margin-left: 6px;
+}
+
+.swiper-slide-editions {
+  width: 350px !important;
+}
+
+.swiper-slide-editions__img {
+  margin-bottom: 13px;
+  width: 350px;
+  height: 390px;
+}
+
+.editions__title-price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  line-height: 22px;
+  color: var(--white-color);
+}
+
+.editions__title {
+  font-weight: 700;
+}
+
+.editions__price {
+  font-style: italic;
+}
+
+.editions__desk {
+  margin-bottom: 13px;
+  line-height: 22px;
+  color: var(--white-color);
+}
+
+.editions__btn {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 8px 18px 8px 18px;
+  border: 2px solid var(--header-scrollbar);
+  border-radius: 100px;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--white-color);
+  background-color: transparent;
+  outline: none;
+  transition: background-color 200ms ease-in-out;
+  transition: border 200ms ease-in-out;
+}
+
+.editions__btn::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  display: none;
+  width: calc(100% + 8px);
+  height: calc(100% + 7px);
+  border: 2px solid var(--header-hover-color);
+  border-radius: 100px;
+}
+
+.editions__btn:hover {
+  background-color: var(--header-scrollbar);
+  cursor: pointer;
+}
+
+.editions__btn:active {
+  background-color: var(--header-scrollbar);
+}
+
+.editions__btn:focus:not(:focus-visible) {
+  border: 2px solid var(--header-scrollbar-focus);
+  background-color: var(--header-focus-color);
+}
+
+.editions__btn:focus-visible.editions__btn::before {
+  display: block;
+}
+
+
