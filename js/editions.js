@@ -28,11 +28,7 @@
 })();
 
 let swiperEditions = new Swiper('.swiper-container-editions', {
-  // Optional parameters
-  spaceBetween: 50,
-  slidesPerView: 3,
-  slidesPerGroup : 3,
-  // Navigation arrows
+
   navigation: {
     nextEl: '.swiper-button-next-editions',
     prevEl: '.swiper-button-prev-editions',
@@ -106,4 +102,38 @@ prevElEditions.addEventListener('keypress', (e) => {
 
 if (screen.width < 1920) {
   document.querySelector('.swiper-pages__all-editions').textContent = 4;
+}
+
+if (screen.width < 768) {
+  document.querySelector('.swiper-container-editions').classList.remove('swiper-container');
+  document.querySelector('.swiper-wrapper-editions').classList.remove('swiper-wrapper');
+  document.querySelectorAll('.swiper-slide-editions').forEach (el => {
+    el.classList.remove('swiper-slide');
+  });
+
+  let checkBoxItems = document.querySelectorAll('.categories__checkbox-item');
+  let checkBoxInputs = document.querySelectorAll('.categories__check');
+  for (let i = 0; i < checkBoxInputs.length; i++) {
+    if (!checkBoxInputs[i].checked) {
+      checkBoxItems[i].classList.add('categories__checkbox-item--none');
+    }
+  };
+
+  for (let i = 0; i < checkBoxItems.length; i++) {
+    checkBoxItems[i].addEventListener('click', () => {
+      if (checkBoxInputs[i].checked && !document.querySelector('.categories__title-arrow').classList.contains('categories__title-arrow--active')) {
+        checkBoxInputs[i].checked = false;
+        checkBoxItems[i].classList.add('categories__checkbox-item--none');
+      }
+    });
+  }
+
+  document.querySelector('.categories__title').addEventListener('click', () => {
+    document.querySelector('.categories__title-arrow').classList.toggle('categories__title-arrow--active');
+    for (let i = 0; i < checkBoxInputs.length; i++) {
+      if (!checkBoxInputs[i].checked) {
+        checkBoxItems[i].classList.toggle('categories__checkbox-item--none');
+      }
+    };
+  })
 }

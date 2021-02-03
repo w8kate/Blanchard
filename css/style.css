@@ -2783,6 +2783,7 @@ a[href="#artists"]:active {
 
   .section-container-events {
     padding-top: 50px;
+    padding-bottom: 47px;
   }
 
   .events__list {
@@ -2859,8 +2860,30 @@ a[href="#artists"]:active {
 }
 
 .categories__title {
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  cursor: auto;
   font-weight: 700;
   color: var(--white-color);
+}
+
+.categories__title-arrow {
+  position: absolute;
+  top: 2px;
+  right: -1px;
+  display: none;
+  width: 14px;
+  height: 14px;
+  background-image: url(../img/editions/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  transition: all 200ms ease-in-out;
+}
+
+.categories__title-arrow--active {
+  transform: rotate(180deg) translateY(-5px);
 }
 
 .categories__label-check {
@@ -3088,8 +3111,25 @@ a[href="#artists"]:active {
   }
 
   .swiper-container-editions {
-    margin-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
     width: 638px;
+  }
+
+  .swiper-wrapper-editions {
+    margin-left: 13px;
+  }
+
+  .swiper-button-prev-editions {
+    margin-left: 10px;
+  }
+
+  .swiper-pages-editions {
+    margin-left: 60px;
+  }
+
+  .swiper-button-next-editions {
+    margin-left: 8px;
   }
 
   .swiper-slide-editions {
@@ -3111,7 +3151,7 @@ a[href="#artists"]:active {
   }
 
   .categories__title {
-    margin-top: 19px;
+    margin-top: 7px;
   }
 
   .categories__checkbox-list {
@@ -3132,16 +3172,112 @@ a[href="#artists"]:active {
 
   .swiper-container-editions {
     margin-top: 49px;
-    margin-left: -3px;
-    width: 642px;
+    margin-left: 0px;
+    width: 100%;
   }
 
   .swiper-wrapper-editions {
-    margin-left: 30px;
+    margin-left: 27px;
+    width: 642px;
+  }
+
+  .swiper-button-prev-editions {
+    margin-left: 0px;
+  }
+
+  .swiper-pages-editions {
+    margin-left: 50px;
+  }
+
+  .swiper-button-next-editions {
+    margin-left: -3px;
   }
 }
 
 @media (max-width: 767.98px) {
+
+  .editions__categories {
+    margin-bottom: -5px;
+  }
+
+  .categories__title {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .categories__title::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 1px;
+    border-top: 1px solid  rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 38px;
+    background-color:transparent;
+  }
+
+  .categories__title-arrow {
+    display: block;
+  }
+
+  .categories__checkbox-list {
+    max-height: none;
+  }
+
+  .categories__checkbox-item {
+    position: relative;
+    margin-right: 0px;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .categories__checkbox-item::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 2px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .categories__checkbox-item--none {
+    display: none;
+  }
+
+  .swiper-container-editions {
+    width: 100%;
+  }
+
+  .swiper__navigation-editions {
+    display: none;
+  }
+
+  .swiper-wrapper-editions {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .swiper-slide-editions {
+    margin-right: 30px;
+    width: 130px !important;
+  }
+
+  .swiper-slide-editions:nth-child(2n) {
+    margin-right: 0px;
+  }
+
+  .swiper-slide-editions__img {
+    width: 130px;
+    height: 143px;
+  }
+
 
 }
 
