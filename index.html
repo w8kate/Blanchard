@@ -1937,7 +1937,7 @@
           <span class="price__interval">руб.</span>
         </form>
       </div>
-      <div class="swiper-container swiper-container-editions">
+      <div class="editions__swiper">
         <div class="swiper__navigation swiper__navigation-editions">
           <div class="swiper-button-prev swiper-button-prev-editions"></div>
           <div class="swiper-pages swiper-pages-editions">
@@ -1947,69 +1947,85 @@
           </div>
           <div class="swiper-button-next swiper-button-next-editions"></div>
         </div>
-        <div class="swiper-wrapper swiper-wrapper-editions">
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/1.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Искусство цвета</div>
-              <div class="editions__price">620 руб</div>
+        <div class="swiper-container swiper-container-editions">
+          <div class="swiper-wrapper swiper-wrapper-editions">
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/1.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Искусство цвета</div>
+                  <div class="editions__desk">Иттен, Иоханнес</div>
+                </div>
+                <div class="editions__price">620 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Иттен, Иоханнес</div>
-            <button class="editions__btn">Заказать</button>
-          </div>
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/2.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Типографика</div>
-              <div class="editions__price">2 450 руб</div>
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/2.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Типографика</div>
+                  <div class="editions__desk">Рудер, Эмиль</div>
+                </div>
+                <div class="editions__price">2 450 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Рудер, Эмиль</div>
-            <button class="editions__btn">Заказать</button>
-          </div>
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/3.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Книга про буквы</div>
-              <div class="editions__price">2 200 руб</div>
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/3.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Книга про буквы</div>
+                  <div class="editions__desk">Гордон, Юрий</div>
+                </div>
+                <div class="editions__price">2 200 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Гордон, Юрий</div>
-            <button class="editions__btn">Заказать</button>
-          </div>
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/4.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Николай Ильин</div>
-              <div class="editions__price">1 100 руб</div>
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/4.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Николай Ильин</div>
+                  <div class="editions__desk">Кричевский, Влади...</div>
+                </div>
+                <div class="editions__price">1 100 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Кричевский, Владимир</div>
-            <button class="editions__btn">Заказать</button>
-          </div>
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/5.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Модульные сетки в граф...</div>
-              <div class="editions__price">1 450 руб</div>
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/5.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Модульные сет...</div>
+                  <div class="editions__desk">Мюллер-Брокманн...</div>
+                </div>
+                <div class="editions__price">1 450 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Мюллер-Брокманн, Йозеф</div>
-            <button class="editions__btn">Заказать</button>
-          </div>
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/6.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Эволюция графических ст...</div>
-              <div class="editions__price">3 200 руб</div>
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/6.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Эволюция граф...</div>
+                  <div class="editions__desk">Хеллер, Чваст</div>
+                </div>
+                <div class="editions__price">3 200 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Хеллер, Чваст</div>
-            <button class="editions__btn">Заказать</button>
-          </div>
-          <div class="swiper-slide swiper-slide-editions">
-            <img class="swiper-slide-editions__img" src="./img/editions/covers/7.jpg" alt="cover">
-            <div class="editions__title-price">
-              <div class="editions__title">Искусство и визуальное в...</div>
-              <div class="editions__price">2 200 руб</div>
+            <div class="swiper-slide swiper-slide-editions">
+              <img class="swiper-slide-editions__img" src="./img/editions/covers/7.jpg" alt="cover">
+              <div class="editions__info">
+                <div class="editions__title-desk">
+                  <div class="editions__title">Искусство и ви...</div>
+                  <div class="editions__desk">Арнхейм, Рудольф</div>
+                </div>
+                <div class="editions__price">2 200 руб</div>
+              </div>
+              <button class="editions__btn">Заказать</button>
             </div>
-            <div class="editions__desk">Арнхейм, Рудольф</div>
-            <button class="editions__btn">Заказать</button>
           </div>
         </div>
       </div>

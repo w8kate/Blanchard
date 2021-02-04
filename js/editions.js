@@ -36,7 +36,7 @@ let swiperEditions = new Swiper('.swiper-container-editions', {
 
   breakpoints: {
     768: {
-      spaceBetween: 31,
+      spaceBetween: 37,
       slidesPerView: 2,
       slidesPerGroup: 2,
     },

@@ -1768,11 +1768,6 @@ div[aria-selected="true"] {
     height: 238px;
   }
 
-  .swiper-slide-gallery::before {
-    width: 280px;
-    height: 280px;
-  }
-
   .gallery-modal__container {
     width: 594px;
   }
@@ -1815,7 +1810,7 @@ div[aria-selected="true"] {
   .swiper-container-gallery {
     margin-top: 32px;
     margin-bottom: 30px;
-    width: 664px;
+    width: 675px;
   }
 
   .swiper-wrapper-gallery {
@@ -1875,6 +1870,10 @@ div[aria-selected="true"] {
     height: 465px;
   }
 
+  .swiper-wrapper-gallery {
+    margin-left: 0px;
+  }
+
   .swiper-pages {
     position: absolute;
     top: 421px;
@@ -1896,7 +1895,7 @@ div[aria-selected="true"] {
   }
 
   .swiper-slide-gallery {
-    width: 290px;
+    width: 290px !important;
     height: 367px;
   }
 
@@ -3011,16 +3010,27 @@ a[href="#artists"]:active {
   color: transparent;
 }
 
+.editions__swiper {
+  position: relative;
+}
+
 .swiper-container-editions {
-  margin-top: 33px;
-  margin-left: 163px;
+  margin-top: 90px;
+  margin-left: 170px;
   margin-right: 0px;
-  width: 1160px;
+  width: 1151px !important;
+}
+
+.swiper__navigation-editions {
+  position: absolute;
+  top: 33px;
+  left: 165px;
 }
 
 .swiper-wrapper-editions {
   padding-top: 4px;
-  margin-left: 6px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .swiper-slide-editions {
@@ -3033,7 +3043,7 @@ a[href="#artists"]:active {
   height: 390px;
 }
 
-.editions__title-price {
+.editions__info {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -3110,26 +3120,19 @@ a[href="#artists"]:active {
     margin-left: -2px;
   }
 
-  .swiper-container-editions {
+  .editions__swiper {
     margin-right: auto;
     margin-left: auto;
-    width: 638px;
   }
 
-  .swiper-wrapper-editions {
+  .swiper-container-editions {
     margin-left: 13px;
+    width: 628px !important;
   }
 
-  .swiper-button-prev-editions {
-    margin-left: 10px;
-  }
-
-  .swiper-pages-editions {
-    margin-left: 60px;
-  }
-
-  .swiper-button-next-editions {
-    margin-left: 8px;
+  .swiper__navigation-editions {
+    top: 35px;
+    left: 10px;
   }
 
   .swiper-slide-editions {
@@ -3170,34 +3173,35 @@ a[href="#artists"]:active {
     margin-top: 25px;
   }
 
+  .editions__swiper {
+    padding-left: 3px;
+  }
+
   .swiper-container-editions {
     margin-top: 49px;
     margin-left: 0px;
-    width: 100%;
+    width: 617px !important;
   }
 
   .swiper-wrapper-editions {
-    margin-left: 27px;
-    width: 642px;
+    margin-top: 55px;
   }
 
-  .swiper-button-prev-editions {
-    margin-left: 0px;
-  }
-
-  .swiper-pages-editions {
-    margin-left: 50px;
-  }
-
-  .swiper-button-next-editions {
-    margin-left: -3px;
+  .swiper__navigation-editions {
+    position: absolute;
+    top: 47px;
+    left: -27px;
   }
 }
 
 @media (max-width: 767.98px) {
 
+  .section-container-editions {
+    padding-bottom: 48px;
+  }
+
   .editions__categories {
-    margin-bottom: -5px;
+    margin-bottom: -12px;
   }
 
   .categories__title {
@@ -3249,8 +3253,13 @@ a[href="#artists"]:active {
     display: none;
   }
 
+  .editions__swiper {
+    margin-left: -3px;
+    width: 290px;
+  }
+
   .swiper-container-editions {
-    width: 100%;
+    width: 290px !important;
   }
 
   .swiper__navigation-editions {
@@ -3273,12 +3282,40 @@ a[href="#artists"]:active {
     margin-right: 0px;
   }
 
+  .swiper-slide-editions:not(:nth-last-child(-n+2)) {
+    margin-bottom: 49px;
+  }
+
   .swiper-slide-editions__img {
     width: 130px;
     height: 143px;
   }
 
+  .editions__info {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
 
+  .editions__title-desk {
+    margin-top: -3px;
+  }
+
+  .editions__title,
+  .editions__desk,
+  .editions__price,
+  .editions__btn {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .editions__desk {
+    margin-bottom: 0px;
+  }
+
+  .editions__btn {
+    margin-bottom: 0px;
+    padding: 10px 35px 12px 35px;
+  }
 }
 
 
