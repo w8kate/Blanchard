@@ -38,6 +38,7 @@
   --events-border: #CACACA;
   --catalog-accordion: #ECECEC;
   --modal-years: #969696;
+  --projects-slide-border: #885BC7;
 }
 
 * {
@@ -3046,6 +3047,8 @@ a[href="#artists"]:active {
 .editions__info {
   display: flex;
   justify-content: space-between;
+  padding-left: 3px;
+  padding-right: 3px;
   width: 100%;
   line-height: 22px;
   color: var(--white-color);
@@ -3068,6 +3071,7 @@ a[href="#artists"]:active {
 .editions__btn {
   position: relative;
   margin-bottom: 10px;
+  margin-left: 3px;
   padding: 8px 18px 8px 18px;
   border: 2px solid var(--header-scrollbar);
   border-radius: 100px;
@@ -3294,6 +3298,8 @@ a[href="#artists"]:active {
   .editions__info {
     flex-direction: column;
     margin-bottom: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .editions__title-desk {
@@ -3314,8 +3320,180 @@ a[href="#artists"]:active {
 
   .editions__btn {
     margin-bottom: 0px;
+    margin-left: 0px;
     padding: 10px 35px 12px 35px;
   }
 }
 
+/* Projects */
 
+.projects__desk {
+  max-width: 1080px;
+}
+
+.projects__desk-icon {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/projects/tooltip.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  transform: translateY(4px);
+  cursor: pointer;
+}
+
+.projects__desk-icon:focus-visible {
+  outline: 1px solid var(--header-focus-color);
+}
+
+.projects__desk-tooltip {
+  position: absolute;
+  left: -124px;
+  bottom: 30px;
+  display: inline-block;
+  padding: 8px 11px 8px 11px;
+  width: 264px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--white-color);
+  background-color: var(--events-border);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.projects__desk-tooltip::before {
+  content: '';
+  position: absolute;
+  left: 126px;
+  bottom: -7px;
+  width: 13px;
+  height: 13px;
+  background-color: var(--events-border);
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.projects__desk-icon:hover .projects__desk-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects__desk-icon:hover .projects__desk-tooltip::before {
+  opacity: 1;
+}
+
+.projects__desk-tooltip--active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.projects__desk-tooltip--active.projects__desk-tooltip::before {
+  opacity: 1;
+}
+
+.projects__desk-link {
+  position: relative;
+  color: var(--header-scrollbar);
+  transition: color 200ms ease-in-out;
+}
+
+.projects__desk-link::before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 23px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--header-scrollbar);
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.projects__desk-link:hover.projects__desk-link::before {
+  opacity: 1;
+}
+
+.projects__desk-link:active.projects__desk-link::before {
+  opacity: 1;
+}
+
+.projects__desk-link:focus {
+  color: var(--header-focus-color);
+}
+
+.projects__desk-link:focus:not(:focus-visible).projects__desk-link::before {
+  opacity: 1;
+  background-color: var(--header-focus-color);
+}
+
+.projects__desk-link:focus-visible {
+  outline: 2px solid var(--header-focus-color);
+}
+
+.projects__partners {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 23px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.projects__swiper {
+  position: relative;
+}
+
+.projects-swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1451px;
+}
+
+.projects-swiper-button-prev,
+.projects-swiper-button-next {
+  background-color: var(--catalog-accordion);
+}
+
+.projects-swiper-button-prev::after,
+.projects-swiper-button-next::after {
+  color: var(--black-color);
+}
+
+.projects-swiper-button-prev {
+  top: 60px;
+  left: 0px;
+}
+
+.projects-swiper-button-next {
+  top: 60px;
+  left: 1570px;
+}
+
+.projects-swiper-slide {
+  display: flex;
+  border: 1px solid var(--events-border);
+  width: 450px;
+  height: 150px;
+  transition: border 200ms ease-in-out;
+}
+
+.projects-swiper-slide__img {
+  margin: auto;
+  align-items: center;
+  filter: contrast(0.7) invert(0.15) opacity(0.53) saturate(0);
+  transition: filter 200ms ease-in-out;
+}
+
+.projects-swiper-slide:hover {
+  border: 1px solid var(--projects-slide-border);
+}
+
+.projects-swiper-slide:hover .projects-swiper-slide__img {
+  filter: none;
+}
