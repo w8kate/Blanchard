@@ -1,10 +1,10 @@
 let projectsIcons = document.querySelectorAll('.projects__desk-icon');
-let projectTooltips = document.querySelectorAll('.projects__desk-tooltip');
+let projectsTooltips = document.querySelectorAll('.projects__desk-tooltip');
 
 for (let i = 0; i < projectsIcons.length; i++) {
   projectsIcons[i].addEventListener('keypress', (e) => {
     if (e.keyCode === 13) {
-      projectTooltips[i].classList.toggle('projects__desk-tooltip--active');
+      projectsTooltips[i].classList.toggle('projects__desk-tooltip--active');
     }
   })
 }
@@ -58,3 +58,18 @@ document.addEventListener('click', function(e) {
     prevElProjects.classList.remove('swiper-button-active');
   }
 })
+
+if (screen.width < 1920) {
+  document.addEventListener('click', (e) => {
+    for (let i = 0; i < projectsIcons.length; i++) {
+      if (e.target === projectsIcons[i]) {
+        projectsIcons[i].classList.add('projects__desk-icon--active');
+        projectsTooltips[i].classList.add('projects__desk-tooltip--active');
+      }
+      else {
+        projectsIcons[i].classList.remove('projects__desk-icon--active');
+        projectsTooltips[i].classList.remove('projects__desk-tooltip--active');
+      }
+    }
+  });
+}

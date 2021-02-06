@@ -3258,7 +3258,9 @@ a[href="#artists"]:active {
   }
 
   .editions__swiper {
-    margin-left: -3px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
     width: 290px;
   }
 
@@ -3370,7 +3372,7 @@ a[href="#artists"]:active {
   content: '';
   position: absolute;
   left: 126px;
-  bottom: -7px;
+  bottom: -6px;
   width: 13px;
   height: 13px;
   background-color: var(--events-border);
@@ -3472,7 +3474,7 @@ a[href="#artists"]:active {
 
 .projects-swiper-button-next {
   top: 60px;
-  left: 1570px;
+  left: auto;
 }
 
 .projects-swiper-slide {
@@ -3496,4 +3498,99 @@ a[href="#artists"]:active {
 
 .projects-swiper-slide:hover .projects-swiper-slide__img {
   filter: none;
+}
+
+.projects-swiper-slide:active {
+  border: 1px solid var(--projects-slide-border);
+}
+
+.projects-swiper-slide:active .projects-swiper-slide__img {
+  filter: none;
+}
+
+@media (max-width: 1919.98px) {
+
+  .projects__desk-icon {
+    background-image: url(../img/projects/tooltip2.svg);
+  }
+
+  .projects__desk-icon--active {
+    background-image: url(../img/projects/tooltip.svg);
+  }
+
+  .projects-swiper-container {
+    width: 818px;
+  }
+
+  .projects-swiper-slide {
+    width: 384px;
+    height: 128px;
+  }
+
+  .projects-swiper-slide__img {
+    transform: scale(0.8);
+  }
+
+  .projects-swiper-button-prev,
+  .projects-swiper-button-next {
+    top: 50px;
+  }
+}
+
+@media (max-width: 1023.98px) {
+
+  .projects__partners {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .projects-swiper-container {
+    width: 562px;
+  }
+
+  .projects-swiper-slide {
+    width: 264px !important;
+    height: 104px;
+  }
+
+  .projects-swiper-button-prev,
+  .projects-swiper-button-next {
+    top: 40px;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .projects__desk-tooltip {
+    width: 180px;
+  }
+
+  .projects__partners {
+    margin-top: -9px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .projects-swiper-container {
+    width: 195px;
+  }
+
+  .projects-swiper-slide {
+    width: 195px !important;
+    height: 65px;
+  }
+
+  .projects-swiper-slide__img {
+    transform: scaleX(0.6) scaleY(0.6);
+  }
+
+  .projects-swiper-slide__img--one {
+    margin: 0 auto;
+  }
+
+  .projects-swiper-button-prev,
+  .projects-swiper-button-next {
+    top: 20px;
+  }
 }
