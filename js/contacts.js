@@ -58,7 +58,7 @@ ymaps.ready(init);
 function init() {
 
   var myMap = new ymaps.Map("map", {
-    center: [55.76207780232767,37.645206591576354],
+    center: [55.76055710364783, 37.637672433220025],
     zoom: 14,
     controls: []
   });
@@ -90,6 +90,20 @@ function init() {
       right: '15px'
     }
   });
+
+  if (screen.width < 1920) {
+    function setTypeAndPan () {
+      myMap.panTo([55.760083106473566, 37.61861970826679], {});
+    }
+    setTypeAndPan();
+  }
+
+  if (screen.width < 1024) {
+    function setTypeAndPan () {
+      myMap.panTo([55.759328660219296, 37.61198894079792], {});
+    }
+    setTypeAndPan();
+  }
 }
 
 
