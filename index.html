@@ -21,6 +21,11 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
+  <script defer src="./js/just-validate.min.js"></script>
+  <script defer src="./js/inputmask.min.js"></script>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+
   <script defer src="./js/script.js"></script>
   <script defer src="./js/hero.js"></script>
   <script defer src="./js/gallery.js"></script>
@@ -29,6 +34,7 @@
   <script defer src="./js/events.js"></script>
   <script defer src="./js/editions.js"></script>
   <script defer src="./js/projects.js"></script>
+  <script defer src="./js/contacts.js"></script>
 
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/choices.min.css">
@@ -2085,14 +2091,61 @@
 
   <!-- Contacts -->
   <section class="section-contacts">
-    <div class="container section-container">
+    <div class="container section-container section-container-contacts">
       <h2 class="section-heading" id="contacts">
         Контакты
       </h2>
     </div>
+    <div class="contacts__container">
+      <div class="contacts__info">
+        <div class="contacts__info-title">
+          Шоурум №4
+        </div>
+        <div class="contacts__info-adress">
+          Леонтьевский переулок, дом 5, строение 1
+        </div>
+        <div class="contacts__form-title">
+          Заказать обратный звонок
+        </div>
+        <form class="contacts__form" action="send.php" enctype="multipart/form-data" method="POST">
+          <input type="hidden" name="admin_email[]" value="e.kusheleva@yandex.ru">
+          <input type="hidden" name="form_subject" value="Тема письма">
+          <input id="name" class="contacts__form-input" name="name" type="text" placeholder="Имя*" data-validate-field="name">
+          <input id="phone" class="contacts__form-input" name="tel" type="tel" placeholder="Телефон*" data-validate-field="tel">
+          <button class="contacts__form-button" type="submit">Заказать</button>
+        </form>
+        <div class="contacts__social-title">
+          Связаться в один клик
+        </div>
+        <ul class="contacts__social-list">
+          <li class="contacts__social-item">
+            <a class="contacts__social-icon contacts__social-icon--one" href="#"></a>
+          </li>
+          <li class="contacts__social-item">
+            <a class="contacts__social-icon contacts__social-icon--two" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts__map" id="map"></div>
+    </div>
   </section>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="container section-container section-container-footer">
+      <img class="logo" src="./img/logo.png" alt="Blanchard. Художественная галерея">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--one" href="#"></a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--two" href="#"></a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link footer__social-link--three" href="#"></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 </html>
