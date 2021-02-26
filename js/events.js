@@ -9,7 +9,9 @@ if (screen.width >= 768 && screen.width < 1024) {
   document.querySelector('.events__item--three').classList.add('events__item--none');
 }
 
-
+if (screen.width < 1024) {
+  document.querySelector('.events__item--three').classList.add('events__item--none');
+}
 
 if (screen.width < 768) {
   document.querySelector('.swiper-container-events').classList.add('swiper-container')
