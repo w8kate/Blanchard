@@ -48,7 +48,6 @@ let swiperGallery = new Swiper('.swiper-container-gallery', {
 });
 
 
-
 let nextEl = document.querySelector('.swiper-button-next');
 let prevEl = document.querySelector('.swiper-button-prev');
 let actualNumber = document.querySelector('.swiper-pages__actual');
