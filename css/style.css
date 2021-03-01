@@ -1415,18 +1415,20 @@ div[aria-selected="true"] {
 }
 
 .swiper__navigation {
+  display: flex;
   margin-bottom: 25px;
 }
 
 .swiper-pages {
   display: inline-block;
-  margin-left: 52px;
+  margin-left: 15px;
+  margin-right: 15px;
   color: var(--white-color);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  top: 0;
+  position: static;
   margin-top: 0;
   width: 30px;
   height: 30px;
@@ -1437,14 +1439,12 @@ div[aria-selected="true"] {
 }
 
 .swiper-button-next {
-  left: 104px;
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
 }
 
 .swiper-button-prev {
-  left: 4px;
   -webkit-transition: all 200ms ease;
   -o-transition: all 200ms ease;
   transition: all 200ms ease;
@@ -1869,24 +1869,10 @@ div[aria-selected="true"] {
     margin-left: 0px;
   }
 
-  .swiper-pages {
+  .swiper__navigation {
     position: absolute;
     top: 415px;
     left: 70px;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 415px;
-    margin-top: 0;
-  }
-
-  .swiper-button-next {
-    left: 180px;
-  }
-
-  .swiper-button-prev {
-    left: 75px;
   }
 
   .swiper-slide-gallery {
