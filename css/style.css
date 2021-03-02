@@ -2273,7 +2273,7 @@ a[href="#artists"]:active {
 }
 
 .years-item__artists {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -2281,11 +2281,13 @@ a[href="#artists"]:active {
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      flex-wrap: wrap; */
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
   max-width: 724px;
+  columns: 3;
+  column-fill: auto;
 }
 
 @media (max-width: 1919.98px) {
@@ -2326,16 +2328,17 @@ a[href="#artists"]:active {
 
   .ui-accordion-content {
     padding-bottom: 11px;
-    height: 411px;
+    max-height: 400px;
   }
 
   .years-item__artists {
     max-width: 437px;
+    columns: 2;
   }
 
-  .years-item__btn {
+  .catalog__years-item {
     margin-right: 42px;
-    padding-bottom: 7px;
+    padding-bottom: 0px;
   }
 }
 
@@ -2380,6 +2383,7 @@ a[href="#artists"]:active {
 
   .years-item__artists {
     max-width: 684px;
+    columns: 3;
   }
 
   .ui-accordion-content {
@@ -2391,10 +2395,6 @@ a[href="#artists"]:active {
     padding-top: 4px;
     padding-bottom: 9px;
     min-width: 208px;
-  }
-
-  .years-item__artists {
-    max-width: 208px;
   }
 }
 
@@ -2448,6 +2448,10 @@ a[href="#artists"]:active {
   .catalog__years-list {
     margin-top: -9px;
     width: 100%;
+  }
+
+  .catalog__years-item {
+    margin-right: 0px;
   }
 
   .ui-accordion-content {
@@ -2508,6 +2512,11 @@ a[href="#artists"]:active {
   .artist-item__title {
     margin-top: -8px;
     margin-bottom: 13px;
+  }
+
+  .years-item__artists {
+    max-height: 790px;
+    columns: 1;
   }
 }
 
@@ -3450,6 +3459,7 @@ a[href="#artists"]:active {
 }
 
 .projects-swiper-container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 1451px;
@@ -3457,22 +3467,14 @@ a[href="#artists"]:active {
 
 .projects-swiper-button-prev,
 .projects-swiper-button-next {
+  position: absolute;
+  top: 60px;
   background-color: var(--catalog-accordion);
 }
 
 .projects-swiper-button-prev::after,
 .projects-swiper-button-next::after {
   color: var(--black-color);
-}
-
-.projects-swiper-button-prev {
-  top: 60px;
-  left: 0px;
-}
-
-.projects-swiper-button-next {
-  top: 60px;
-  left: auto;
 }
 
 .projects-swiper-slide {
@@ -3486,7 +3488,7 @@ a[href="#artists"]:active {
 .projects-swiper-slide__img {
   margin: auto;
   align-items: center;
-  filter: contrast(0.7) invert(0.15) opacity(0.53) saturate(0);
+  filter: grayscale(100%);
   transition: filter 200ms ease-in-out;
 }
 
@@ -3591,6 +3593,14 @@ a[href="#artists"]:active {
   .projects-swiper-button-next {
     top: 20px;
   }
+
+  .projects-swiper-button-prev {
+    left: 0px;
+  }
+
+  .projects-swiper-button-next {
+    right: 0px;
+  }
 }
 
 /* Contacts */
@@ -3605,11 +3615,11 @@ a[href="#artists"]:active {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1920px;
 }
 
 .contacts__info {
-  padding: 124px 122px 124px 160px;
+  padding: 124px 122px 124px 0px;
+  padding-left: calc((100vw - 1602px) / 2);
   border: 1px solid var(--events-border);
 }
 
