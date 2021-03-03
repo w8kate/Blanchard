@@ -2273,15 +2273,6 @@ a[href="#artists"]:active {
 }
 
 .years-item__artists {
-  /* display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; */
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -2328,7 +2319,7 @@ a[href="#artists"]:active {
 
   .ui-accordion-content {
     padding-bottom: 11px;
-    max-height: 400px;
+    height: 400px;
   }
 
   .years-item__artists {
@@ -2895,82 +2886,82 @@ a[href="#artists"]:active {
 
 .categories__label-check {
   position: relative;
-  margin-left: 22px;
+  display: inline-block;
   color: var(--white-color);
   cursor: pointer;
   outline: none;
   transition: color 200ms ease-in-out;
 }
 
-.categories__label-check:focus-visible {
-  outline: 2px solid var(--header-focus-color);
+.categories__check-info {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: color .2s ease-in-out;
 }
 
-.categories__label-check:hover {
+.categories__check-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 19;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--white-color);
+  transition: all .2s ease-in-out;
+}
+
+.categories__check-info::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 15px;
+  border-radius: 10px;
+  width: 3px;
+  height: 3px;
+  background-color: var(--header-hover-color);
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.categories__label-check:hover .categories__check-info {
   color: var(--header-hover-color);
 }
 
-.categories__label-check:hover .categories__check + .categories__check-info {
+.categories__check:hover + .categories__check-info::before {
   border: 1px solid var(--header-hover-color);
 }
 
-.categories__label-check:hover .categories__check + .categories__check-info:before {
+.categories__check:hover + .categories__check-info::after {
   opacity: 1;
-}
-
-.categories__label-check:active {
-  color: var(--header-focus-color);
-}
-
-.categories__label-check:active .categories__check + .categories__check-info {
-  border: 1px solid var(--header-focus-color);
-}
-
-.categories__label-check:active .categories__check + .categories__check-info:before {
-  background-color: var(--header-focus-color);
-  opacity: 1;
-}
-
-.categories__label-check--on {
-  color: var(--header-hover-color);
-}
-
-.categories__check {
-  display: none;
-}
-
-.categories__check + .categories__check-info {
-  position: absolute;
-  top: 6px;
-  left: -21px;
-  width: 12px;
-  height: 12px;
-  border: 1px solid var(--white-color);
-  transition: border 200ms ease-in-out;
-}
-
-.categories__check + .categories__check-info:before {
-  content: '';
-  position: absolute;
-  top: 3px;
-  right: 0px;
-  bottom: 0px;
-  left: 3px;
-  width: 4px;
-  height: 4px;
-  border-radius: 10px;
-  background-color: var(--header-hover-color);
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
-  transition: background-color 200ms ease-in-out;
 }
 
 .categories__check:checked + .categories__check-info {
+  color: var(--header-hover-color);
+}
+
+.categories__check:checked + .categories__check-info::before {
   border: 1px solid var(--header-hover-color);
 }
 
-.categories__check:checked + .categories__check-info:before {
+.categories__check:checked + .categories__check-info::after {
   opacity: 1;
+}
+
+.categories__check:focus + .categories__check-info::after {
+  color: var(--white-color);
+}
+
+.categories__check:focus-visible + .categories__check-info {
+  outline: 1px solid var(--header-hover-color);
+}
+
+.categories__check {
+  position: absolute;
+  opacity: 0;
 }
 
 .price__title {
