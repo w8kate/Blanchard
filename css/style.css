@@ -1725,7 +1725,7 @@ div[aria-selected="true"] {
   width: 100%;
 }
 
-@media (max-width: 1609.98px) {
+@media (max-width: 1610.98px) {
 
   .section-gallery-container {
     padding-bottom: 70px;
@@ -2317,6 +2317,13 @@ a[href="#artists"]:active {
     width: 100%;
   }
 
+  .catalog__years-item {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 1309.98px) {
+
   .ui-accordion-content {
     padding-bottom: 11px;
     height: 400px;
@@ -2325,11 +2332,6 @@ a[href="#artists"]:active {
   .years-item__artists {
     max-width: 437px;
     columns: 2;
-  }
-
-  .catalog__years-item {
-    margin-right: 42px;
-    padding-bottom: 0px;
   }
 }
 
