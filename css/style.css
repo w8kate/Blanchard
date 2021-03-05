@@ -99,7 +99,7 @@ img {
   outline: none;
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .container {
     padding-left: 50px;
@@ -671,7 +671,7 @@ img {
 .header-form__input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
 .header-form__input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .burger {
     display: block;
@@ -1071,7 +1071,7 @@ img {
   border: 3px solid var(--hero-button-border);
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .swiper-slide-hero-one {
     background-image: url(../img/hero/1-1024.jpg);
@@ -1725,7 +1725,7 @@ div[aria-selected="true"] {
   width: 100%;
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .section-gallery-container {
     padding-bottom: 70px;
@@ -2281,7 +2281,7 @@ a[href="#artists"]:active {
   column-fill: auto;
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .section-container-catalog {
     padding-top: 80px;
@@ -2669,7 +2669,7 @@ a[href="#artists"]:active {
   display: none;
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .events__list {
     margin-top: -30px;
@@ -3112,7 +3112,7 @@ a[href="#artists"]:active {
   display: block;
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .section-container-editions {
     padding-bottom: 78px;
@@ -3499,7 +3499,7 @@ a[href="#artists"]:active {
   filter: none;
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .projects__desk-icon {
     background-image: url(../img/projects/tooltip2.svg);
@@ -3768,7 +3768,7 @@ a[href="#artists"]:active {
   filter: grayscale(1);
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .contacts__info {
     padding: 124px 102px 100px 50px;
@@ -3922,7 +3922,7 @@ a[href="#artists"]:active {
   outline: 1px solid var(--header-hover-color);
 }
 
-@media (max-width: 1919.98px) {
+@media (max-width: 1609.98px) {
 
   .section-container-footer {
     padding-top: 40px;

@@ -29,7 +29,7 @@ let swiperGallery = new Swiper('.swiper-container-gallery', {
       slidesPerColumn: 2,
       slidesPerGroup : 2,
     },
-    1920: {
+    1610: {
       spaceBetween: 50,
       slidesPerView: 3,
       slidesPerColumn: 2,
