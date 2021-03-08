@@ -2315,7 +2315,6 @@ a[href="#artists"]:active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  max-width: 724px;
   columns: 3;
   column-fill: auto;
 }
@@ -2369,7 +2368,6 @@ a[href="#artists"]:active {
   }
 
   .years-item__artists {
-    max-width: 437px;
     columns: 2;
   }
 }
@@ -2414,7 +2412,6 @@ a[href="#artists"]:active {
   }
 
   .years-item__artists {
-    max-width: 684px;
     columns: 3;
   }
 
@@ -2547,7 +2544,6 @@ a[href="#artists"]:active {
   }
 
   .years-item__artists {
-    max-height: 790px;
     columns: 1;
   }
 }

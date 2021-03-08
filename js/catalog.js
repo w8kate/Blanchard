@@ -76,6 +76,7 @@
   })
 
 
+
   if (screen.width < 768) {
     document.querySelector('.catalog__artist-list').id = "artists";
 
