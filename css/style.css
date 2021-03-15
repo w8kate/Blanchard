@@ -2316,7 +2316,6 @@ a[href="#artists"]:active {
       -ms-flex-align: start;
           align-items: start;
   columns: 3;
-  column-fill: auto;
 }
 
 @media (max-width: 1609.98px) {
@@ -2368,10 +2367,6 @@ a[href="#artists"]:active {
   }
 
   .years-item__artists {
-    columns: 2;
-  }
-
-  .years-item__artists--two-col {
     columns: 2;
   }
 }
