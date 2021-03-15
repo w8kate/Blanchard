@@ -2316,6 +2316,7 @@ a[href="#artists"]:active {
       -ms-flex-align: start;
           align-items: start;
   columns: 3;
+  column-fill: auto;
 }
 
 @media (max-width: 1609.98px) {
