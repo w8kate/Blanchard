@@ -77,7 +77,7 @@
 
 
 
-  if (screen.width < 768) {
+  if (screen.width < 1024) {
     document.querySelector('.catalog__artist-list').id = "artists";
 
     const artists = document.querySelectorAll('a[href="#artists"]')
