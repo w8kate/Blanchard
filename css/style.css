@@ -1834,6 +1834,10 @@ div[aria-selected="true"] {
     align-items: center;
   }
 
+  .gallery-info {
+    margin-right: 0px;
+  }
+
   .choices {
     margin-bottom: 792px;
   }
